@@ -1,0 +1,2 @@
+user-setup:
+  pkg.installed

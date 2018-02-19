@@ -1,0 +1,56 @@
+include:
+  - bitcurator.tools.py3fpdf
+  - bitcurator.tools.libuna
+  - bitcurator.tools.libewf
+  - bitcurator.tools.afflibv3
+  - bitcurator.tools.dfxml
+  - bitcurator.tools.sleuthkit
+  - bitcurator.tools.pytsk
+  - bitcurator.tools.libsodium
+  - bitcurator.tools.hashdb
+  - bitcurator.tools.hfsexplorer
+  - bitcurator.tools.lightgrep
+  - bitcurator.tools.bulkextractor
+  - bitcurator.tools.bctools
+  - bitcurator.tools.disktype
+  - bitcurator.tools.dumpfloppy
+  - bitcurator.tools.bagitpython
+  - bitcurator.tools.sdhash
+  - bitcurator.tools.md5deep
+  - bitcurator.tools.pyexiftoolgui
+  - bitcurator.tools.fido
+  - bitcurator.tools.testdisk
+  - bitcurator.tools.ssdeep
+  - bitcurator.tools.openpyxl
+  - bitcurator.tools.regripper
+  - bitcurator.tools.nsrllookup
+
+bitcurator-tools:
+  test.nop:
+    - name: bitcurator-tools
+    - require:
+      - bitcurator.tools.py3fpdf
+      - bitcurator.tools.libuna
+      - bitcurator.tools.libewf
+      - bitcurator.tools.afflibv3
+      - bitcurator.tools.dfxml
+      - bitcurator.tools.sleuthkit
+      - bitcurator.tools.pytsk
+      - bitcurator.tools.libsodium
+      - bitcurator.tools.hashdb
+      - bitcurator.tools.hfsexplorer
+      - bitcurator.tools.lightgrep
+      - bitcurator.tools.bulkextractor
+      - bitcurator.tools.bctools
+      - bitcurator.tools.disktype
+      - bitcurator.tools.dumpfloppy
+      - bitcurator.tools.bagitpython
+      - bitcurator.tools.sdhash
+      - bitcurator.tools.md5deep
+      - bitcurator.tools.pyexiftoolgui
+      - bitcurator.tools.fido
+      - bitcurator.tools.testdisk
+      - bitcurator.tools.ssdeep
+      - bitcurator.tools.openpyxl
+      - bitcurator.tools.regripper
+      - bitcurator.tools.nsrllookup

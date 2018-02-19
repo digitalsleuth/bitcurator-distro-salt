@@ -1,0 +1,2 @@
+gxine:
+  pkg.installed

@@ -1,0 +1,2 @@
+gradle:
+  pkg.installed

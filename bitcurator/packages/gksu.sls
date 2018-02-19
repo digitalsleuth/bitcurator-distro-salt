@@ -1,0 +1,2 @@
+gksu:
+  pkg.installed
