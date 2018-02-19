@@ -1,6 +1,4 @@
 python-dateutil:
   pip.installed:
-    - name: python-dateutil >= 2.4.2
+    - name: python-dateutil
     - bin_env: '/usr/bin/pip3'
-    - require:
-      - pkg: python-pip

@@ -9,7 +9,6 @@ include:
   - bitcurator.python-packages.lxml
   - bitcurator.python-packages.matplotlib
   - bitcurator.python-packages.pefile
-  - bitcurator.python-packages.pip
   - bitcurator.python-packages.python-dateutil
   - bitcurator.python-packages.python-evtx
   - bitcurator.python-packages.python-registry
@@ -31,8 +30,7 @@ bitcurator-python-packages:
       - bitcurator.python-packages.jdcal
       - bitcurator.python-packages.lxml
       - bitcurator.python-packages.matplotlib
-      -  bitcurator.python-packages.pefile
-      - bitcurator.python-packages.pip
+      - bitcurator.python-packages.pefile
       - bitcurator.python-packages.python-dateutil
       - bitcurator.python-packages.python-evtx
       - bitcurator.python-packages.python-registry

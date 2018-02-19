@@ -6,5 +6,3 @@ lxml:
   pip.installed:
     - name: lxml
     - bin_env: '/usr/bin/pip3'
-    - require:
-      - pkg: python-pip
