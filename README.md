@@ -39,7 +39,24 @@ sudo salt-call -l info --local --file-root=/tmp/salt state.apply bitcurator.mods
 
 Once the salt process has completed, reboot the VM or host. The environment should now be a fully configured build of BitCurator.
 
-## Additional Option (not required for regular build) 
+## What's in this repository
+
+This repo has been organized to make the process of maintaining and contributing to BitCurator development as transparent as possible. An explanation of the layout follows.
+
+The ``bitcurator'' directory contains all support files and salt states in a number of different directories:
+
+- attic: Legacy and unused files that have been kept for reference or potential future use
+- config: Salt states and support files for environment and user configuration
+- debs: Deb packages that are required but do not have a stable external home
+- env: Environment support files and salt states for the user desktop and various tools
+- externals: Source packages that are either not deb packaged or for which a legacy version is required
+- mounter: Mount policy tools
+- packages: all deb packages (to be installed with apt-get)
+- python-packages: all Python 3 packages (to be installed with pip)
+- repos: additional repositories that must be enabled
+- tools: tools that must be installed from source
+
+## Alternate Build and Configuration Options (not required for regular build) 
 
 Installing only select packages
 
