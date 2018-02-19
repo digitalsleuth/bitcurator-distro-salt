@@ -1,5 +1,5 @@
 six:
-  pip.installed
+  pip.installed:
     - name: six
     - bin_env: '/usr/bin/pip3'
     - require:

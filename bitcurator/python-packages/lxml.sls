@@ -3,7 +3,7 @@ include:
   - bitcurator.packages.libxslt-dev
 
 lxml:
-  pip.installed
+  pip.installed:
     - name: lxml
     - bin_env: '/usr/bin/pip3'
     - require:
