@@ -291,7 +291,6 @@ bitcurator-packages:
       - sls: bitcurator.packages.python3-tk
       - sls: bitcurator.packages.python3-virtualenv
       - sls: bitcurator.packages.readpst
-      - sls: bitcurator.packages.recoll
       - sls: bitcurator.packages.sharutils
       - sls: bitcurator.packages.smartmontools
       - sls: bitcurator.packages.squashfs-tools
