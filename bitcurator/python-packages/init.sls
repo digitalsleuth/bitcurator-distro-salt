@@ -4,6 +4,7 @@ include:
   - .lxml
   - .pip
   - .python-dateutil
+  - .python-evtx
   - .setuptools
   - .six
   - .wheel
