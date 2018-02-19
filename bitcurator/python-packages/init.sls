@@ -12,7 +12,6 @@ include:
   - .pip
   - .python-dateutil
   - .python-evtx
-  - .python-magic
   - .python-registry
   - .setuptools
   - .six
