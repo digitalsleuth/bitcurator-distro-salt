@@ -1,5 +1,5 @@
 include:
-  - bitcurator.tools.py3fpdf
+  - bitcurator.tools.pyfpdf
   - bitcurator.tools.libuna
   - bitcurator.tools.libewf
   - bitcurator.tools.afflibv3
@@ -29,7 +29,7 @@ bitcurator-tools:
   test.nop:
     - name: bitcurator-tools
     - require:
-      - bitcurator.tools.py3fpdf
+      - bitcurator.tools.pyfpdf
       - bitcurator.tools.libuna
       - bitcurator.tools.libewf
       - bitcurator.tools.afflibv3
