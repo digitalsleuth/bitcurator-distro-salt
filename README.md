@@ -28,16 +28,6 @@ sudo apt-get install salt-minion
 sudo service salt-minion stop
 ```
 
-Previously, something like the following was required:
-
-```shell
-wget -O - https://repo.saltstack.com/apt/ubuntu/16.04/amd64/latest/SALTSTACK-GPG-KEY.pub | sudo apt-key add -
-echo "deb http://repo.saltstack.com/apt/ubuntu/16.04/amd64/latest xenial main" | sudo tee /etc/apt/sources.list.d/saltstack.list
-sudo apt-get update
-sudo apt-get install salt-minion
-sudo service salt-minion stop
-```
-
 Visit http://repo.saltstack.com/#ubuntu for additional details.
 
 ## Installing and running from this repo
@@ -47,8 +37,23 @@ git clone https://github.com/bitcurator/bitcurator-distro-salt /tmp/salt
 sudo salt-call -l info --local --file-root=/tmp/salt state.apply bitcurator.mods
 ```
 
-## Alternate: Installing only select packages
+Once the salt process has completed, reboot the VM or host. The environment should now be a fully configured build of BitCurator.
+
+## Additional Option (not required for regular build) 
+
+Installing only select packages
 
 ```shell
 sudo salt-call --local --file-root=/tmp/bitcurator state.sls bitcurator.packages,bitcurator.python-packages
 ```
+
+Salt may also be installed from a dedicated repo (if needed for alternate buidls):
+
+```shell
+wget -O - https://repo.saltstack.com/apt/ubuntu/16.04/amd64/latest/SALTSTACK-GPG-KEY.pub | sudo apt-key add -
+echo "deb http://repo.saltstack.com/apt/ubuntu/16.04/amd64/latest xenial main" | sudo tee /etc/apt/sources.list.d/saltstack.list
+sudo apt-get update
+sudo apt-get install salt-minion
+sudo service salt-minion stop
+```
+
