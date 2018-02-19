@@ -1,6 +1,6 @@
-argparse:
+pefile:
   pip.installed:
-    - name: argparse
+    - name: pefile
     - bin_env: '/usr/bin/pip3'
     - require:
       - pkg: python-pip

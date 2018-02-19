@@ -1,6 +1,6 @@
-argparse:
+construct:
   pip.installed:
-    - name: argparse
+    - name: construct
     - bin_env: '/usr/bin/pip3'
     - require:
       - pkg: python-pip

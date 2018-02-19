@@ -1,6 +1,6 @@
-argparse:
+analyzeMFT:
   pip.installed:
-    - name: argparse
+    - name: analyzeMFT
     - bin_env: '/usr/bin/pip3'
     - require:
       - pkg: python-pip

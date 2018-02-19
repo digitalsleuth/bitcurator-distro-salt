@@ -1,6 +1,6 @@
-argparse:
+unicodecsv:
   pip.installed:
-    - name: argparse
+    - name: unicodecsv
     - bin_env: '/usr/bin/pip3'
     - require:
       - pkg: python-pip

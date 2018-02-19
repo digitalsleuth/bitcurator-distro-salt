@@ -1,6 +1,6 @@
-argparse:
+et_xmlfile:
   pip.installed:
-    - name: argparse
+    - name: et_xmlfile
     - bin_env: '/usr/bin/pip3'
     - require:
       - pkg: python-pip

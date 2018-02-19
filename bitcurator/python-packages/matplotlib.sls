@@ -1,6 +1,6 @@
-argparse:
+matplotlib:
   pip.installed:
-    - name: argparse
+    - name: matplotlib
     - bin_env: '/usr/bin/pip3'
     - require:
       - pkg: python-pip

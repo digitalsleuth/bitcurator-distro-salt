@@ -1,6 +1,6 @@
-argparse:
+configobj:
   pip.installed:
-    - name: argparse
+    - name: configobj
     - bin_env: '/usr/bin/pip3'
     - require:
       - pkg: python-pip
