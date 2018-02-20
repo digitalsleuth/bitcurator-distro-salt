@@ -1,3 +1,7 @@
+include:
+  - ..packages.python-pip
+  - ..packages.python3-pip
+
 jdcal:
   pip.installed:
     - name: jdcal
