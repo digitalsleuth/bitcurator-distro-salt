@@ -1,5 +1,5 @@
-include:
-  - ..packages.python-pip
+python-pip:
+  pkg.installed
 
 python-evtx:
   pip.installed:

@@ -1,5 +1,5 @@
-include:
-  - ..packages.python-pip
+python-pip:
+  pkg.installed
 
 et_xmlfile:
   pip.installed:
