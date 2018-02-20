@@ -9,7 +9,7 @@ This repo includes relevant salt states and supporting files to build a stack of
 
 ## Dependencies
 
-Currently tested with daily builds of Ubuntu 18.04LTS. Prior to installing and using either SaltStack or bitcurator-distro salt, create a fresh Ubuntu 18.04LTS environment in a VM or on a dedicated host, login, and execute the following in a terminal:
+Currently tested with daily builds of Ubuntu 18.04LTS. Prior to installing and using either SaltStack or bitcurator-distro salt, create a fresh Ubuntu 18.04LTS environment in a VM or on a dedicated host with the user "bcadmin". Login as "bcadmin", and execute the following in a terminal:
 
 ```shell
 sudo apt-get update
