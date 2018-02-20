@@ -201,7 +201,7 @@ bitcurator-packages:
       - sls: bitcurator.packages.gradle
       - sls: bitcurator.packages.grsync
       - sls: bitcurator.packages.gtkhash
-      - sls: bitcurator.packages.guymager-beta
+      - sls: bitcurator.packages.guymager
       - sls: bitcurator.packages.gxine
       - sls: bitcurator.packages.hardinfo
       - sls: bitcurator.packages.hdparm
@@ -298,7 +298,6 @@ bitcurator-packages:
       - sls: bitcurator.packages.swig
       - sls: bitcurator.packages.synaptic
       - sls: bitcurator.packages.syslinux-utils
-      - sls: bitcurator.packages.tagtool
       - sls: bitcurator.packages.tree
       - sls: bitcurator.packages.ubiquity-frontend-debconf
       - sls: bitcurator.packages.udisks2
