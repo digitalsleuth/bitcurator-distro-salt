@@ -1,10 +1,9 @@
 include:
   - ..packages.python-pip
 
-pefile:
+pip:
   pip.installed:
-    - name: pefile
-    - bin_env: '/usr/bin/pip3'
+    - name: pip
     - upgrade: True
     - require:
       - pkg: python-pip

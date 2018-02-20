@@ -1,5 +1,5 @@
-python-pip:
-  pkg.installed
+include:
+  - ..packages.python-pip
 
 python-registry:
   pip.installed:

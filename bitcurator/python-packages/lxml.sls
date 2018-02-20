@@ -1,9 +1,7 @@
 include:
   - bitcurator.packages.libxml2-dev
   - bitcurator.packages.libxslt-dev
-
-python-pip:
-  pkg.installed
+  - ..packages.python-pip
 
 lxml:
   pip.installed:
