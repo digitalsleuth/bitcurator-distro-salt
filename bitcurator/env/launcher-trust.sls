@@ -19,7 +19,6 @@ launcher-trust:
         gio set /home/bcadmin/Desktop/Forensics\ and\ Reporting/BEViewer.desktop "metadata::trusted" yes
         gio set /home/bcadmin/Desktop/Forensics\ and\ Reporting/bcdat.desktop "metadata::trusted" yes
         gio set /home/bcadmin/Desktop/Forensics\ and\ Reporting/bcgui.desktop "metadata::trusted" yes
-        gio set /home/bcadmin/Desktop/Forensics\ and\ Reporting/bcmount.desktop "metadata::trusted" yes
         gio set /home/bcadmin/Desktop/Forensics\ and\ Reporting/brunnhilde.desktop "metadata::trusted" yes
         gio set /home/bcadmin/Desktop/Forensics\ and\ Reporting/disktype.desktop "metadata::trusted" yes
         gio set /home/bcadmin/Desktop/Forensics\ and\ Reporting/fiwalk.desktop "metadata::trusted" yes
