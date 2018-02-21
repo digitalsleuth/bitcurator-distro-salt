@@ -9,15 +9,17 @@ This repo includes relevant salt states and supporting files to build a stack of
 
 ## Dependencies
 
-Currently tested with daily builds of Ubuntu 18.04LTS. Prior to installing and using either SaltStack or bitcurator-distro salt, create a fresh Ubuntu 18.04LTS environment in a VM or on a dedicated host with the user "bcadmin". Login as "bcadmin", and execute the following in a terminal:
+Currently tested with daily builds of Ubuntu 18.04LTS. Prior to installing and using either SaltStack or bitcurator-distro salt, create a fresh Ubuntu 18.04LTS environment in a VM or on a dedicated host with the hostname "bitcurator" and a user named "bcadmin". Login as "bcadmin", and execute the following in a terminal:
 
 ```shell
 sudo apt-get update
 sudo apt-get dist-upgrade
-sudo apt-get install git
+sudo apt-get install git python-pip python3-pip
 # Optional - dkms for persistence of kernel modules, vim editor for convenience
 sudo apt-get install dkms vim
 ```
+
+Note: python-pip and python3-pip should not be required, but salt has some trouble reloading states before installing pip packages in the current configuration, unless they already exist on the host. This should get fixed in a future release.
 
 ## Installing and preparing SaltStack
 
