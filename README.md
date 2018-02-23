@@ -14,12 +14,10 @@ Currently tested with daily builds of Ubuntu 18.04LTS. Prior to installing and u
 ```shell
 sudo apt-get update
 sudo apt-get dist-upgrade
-sudo apt-get install git python-pip python3-pip
+sudo apt-get install git
 # Optional - dkms for persistence of kernel modules, vim editor for convenience
 sudo apt-get install dkms vim
 ```
-
-Note: python-pip and python3-pip should not be required, but salt has some trouble reloading states before installing pip packages in the current configuration, unless they already exist on the host. This should get fixed in a future release.
 
 ## Installing and preparing SaltStack
 
