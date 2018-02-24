@@ -5,3 +5,11 @@
     - group: bcadmin
     - makedirs: True
     - file_mode: keep
+
+  cmd.run:
+    - name: |
+        mkdir /home/bcadmin/.vim/backups
+        mkdir /home/bcadmin/.vim/swaps
+    - cwd: /tmp
+    - shell: /bin/bash
+    - timeout: 12000

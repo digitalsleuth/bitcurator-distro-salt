@@ -11,6 +11,8 @@
 # Requires Python >3.0
 # Additional information at http://wiki.bitcurator.net/
 
+import gi
+gi.require_version('AppIndicator3', '0.1')
 from gi.repository import AppIndicator3 as appindicator
 from gi.repository import Gtk as gtk
 import subprocess
@@ -81,22 +83,6 @@ class MounterAppIndicator:
         self.menu.show()
         self.ind.set_menu(self.menu)
 
-##    def mounter_start(self, widget, data=None):
-        #Call mounter Unity app / legacy app here
-        #subprocess.call(["/usr/local/bin/rbfstabGUI.sh"])
-        #win = MounterDialog("Select devices to mount. Devices will be mounted according to the system policy." + "\nCurrently mounted devices will not be changed.\n\n")
-        #win.connect("delete-event", gtk.main_quit)
-        #win.show_all()
-        #response = win.run()
-        #win.destroy()
-
-##        bc_mounter.main()
-
-#        win = bc_mounter.MounterDialog("Select devices to mount. Devices will be mounted according to the system policy." + "\nCurrently mounted devices will not be changed.\n\n")
-#        response = win.run()
-#        win.destroy()
-
-
     def ro_set(self, widget, data=None):
         #Call RO warning indicator here    
         if not os.path.isfile("/etc/udev/rules.d/fstab.rules"):
@@ -105,8 +91,6 @@ class MounterAppIndicator:
                            "Currently mounted volumes will not be affected until remounted.")
         else:
             win = PolicyDialog("\nThe mount policy is already in the READ-ONLY state." + "\n") 
-        #win.connect("delete-event", gtk.main_quit)
-        #win.show_all()
         response = win.run()
         win.destroy()
 
@@ -157,38 +141,4 @@ def main():
 if __name__ == "__main__":
     indicator = MounterAppIndicator()
     main()
-
-# Dialog Example - Remove in future
-#class DialogExample(gtk.Dialog):
-#    def __init__(self, parent):
-#        gtk.Dialog.__init__(self, "My Dialog", parent, 0,
-#            (gtk.STOCK_CANCEL, gtk.ResponseType.CANCEL,
-#             gtk.STOCK_OK, gtk.ResponseType.OK))
-#
-#        self.set_default_size(300, 200)
-#        label = gtk.Label("This is a dialog to display additional information")
-#        box = self.get_content_area()
-#        box.add(label)
-#        self.show_all()
-#
-#class DialogWindow(gtk.Window):
-#    def __init__(self):
-#        gtk.Window.__init__(self, title="Dialog Example")
-#
-#        self.set_border_width(6)
-#        self.set_default_size(500, 150)
-#        button = gtk.Button("Open dialog")
-#        button.connect("clicked", self.on_button_clicked)
-#
-#        self.add(button)
-#
-#    def on_button_clicked(self, widget):
-#        dialog = DialogExample(self)
-#        response = dialog.run()
-#
-#        if response == gtk.ResponseType.OK:
-#            print("The OK button was clicked")
-#        elif response == gtk.ResponseType.CANCEL:
-#            print("The Cancel button was clicked")
-#        dialog.destroy()
 

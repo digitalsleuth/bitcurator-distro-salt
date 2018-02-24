@@ -119,6 +119,7 @@ include:
   - bitcurator.packages.openssh-server
   - bitcurator.packages.plymouth-themes
   - bitcurator.packages.plymouth-x11
+  - bitcurator.packages.python-appindicator
   - bitcurator.packages.python-compizconfig
   - bitcurator.packages.python-magic
   - bitcurator.packages.python-pip
@@ -281,6 +282,7 @@ bitcurator-packages:
       - sls: bitcurator.packages.openssh-server
       - sls: bitcurator.packages.plymouth-themes
       - sls: bitcurator.packages.plymouth-x11
+      - sls: bitcurator.packages.python-appindicator
       - sls: bitcurator.packages.python-compizconfig
       - sls: bitcurator.packages.python-magic
       - sls: bitcurator.packages.python-pip
