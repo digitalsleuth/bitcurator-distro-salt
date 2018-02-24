@@ -1,4 +1,4 @@
-/home/bcadmin/:
+/home/bcadmin/.vim:
   file.recurse:
     - source: salt://bitcurator/env/.vim
     - user: bcadmin
