@@ -7,7 +7,7 @@ include:
   - bitcurator.env.mediasymlink
   - bitcurator.env.mountwinalias
   - bitcurator.env.setnoclobber
-  - bitcurator.env.floppyconfig.sls
+  - bitcurator.env.floppyconfig
   - bitcurator.env.usr
   - bitcurator.env.vimrc
   - bitcurator.env.vim-support
@@ -24,7 +24,7 @@ bitcurator-env:
       - sls: bitcurator.env.mediasymlink
       - sls: bitcurator.env.mountwinalias
       - sls: bitcurator.env.setnoclobber
-      - sls: bitcurator.env.floppyconfig.sls
+      - sls: bitcurator.env.floppyconfig
       - sls: bitcurator.env.usr
       - sls: bitcurator.env.vimrc
       - sls: bitcurator.env.vim-support
