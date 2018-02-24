@@ -20,6 +20,7 @@ include:
   - bitcurator.packages.dconf-tools
   - bitcurator.packages.dialog
   - bitcurator.packages.discover
+  - bitcurator.packages.disktype
   - bitcurator.packages.dkms
   - bitcurator.packages.easytag
   - bitcurator.packages.equivs
@@ -101,6 +102,7 @@ include:
   - bitcurator.packages.libxslt-dev
   - bitcurator.packages.linux-headers-generic
   - bitcurator.packages.maven
+  - bitcurator.packages.md5deep
   - bitcurator.packages.mediainfo
   - bitcurator.packages.mencoder
   - bitcurator.packages.mercurial-common
@@ -136,10 +138,12 @@ include:
   - bitcurator.packages.sharutils
   - bitcurator.packages.smartmontools
   - bitcurator.packages.squashfs-tools
+  - bitcurator.packages.ssdeep
   - bitcurator.packages.subversion
   - bitcurator.packages.swig
   - bitcurator.packages.synaptic
   - bitcurator.packages.syslinux-utils
+  - bitcurator.packages.testdisk
   - bitcurator.packages.tree
   - bitcurator.packages.ubiquity-frontend-debconf
   - bitcurator.packages.udisks2
@@ -179,6 +183,7 @@ bitcurator-packages:
       - sls: bitcurator.packages.dconf-tools
       - sls: bitcurator.packages.dialog
       - sls: bitcurator.packages.discover
+      - sls: bitcurator.packages.disktype
       - sls: bitcurator.packages.dkms
       - sls: bitcurator.packages.easytag
       - sls: bitcurator.packages.equivs
@@ -259,6 +264,7 @@ bitcurator-packages:
       - sls: bitcurator.packages.libxslt-dev
       - sls: bitcurator.packages.linux-headers-generic
       - sls: bitcurator.packages.maven
+      - sls: bitcurator.packages.md5deep
       - sls: bitcurator.packages.mediainfo
       - sls: bitcurator.packages.mencoder
       - sls: bitcurator.packages.mercurial-common
@@ -294,10 +300,12 @@ bitcurator-packages:
       - sls: bitcurator.packages.sharutils
       - sls: bitcurator.packages.smartmontools
       - sls: bitcurator.packages.squashfs-tools
+      - sls: bitcurator.packages.ssdeep
       - sls: bitcurator.packages.subversion
       - sls: bitcurator.packages.swig
       - sls: bitcurator.packages.synaptic
       - sls: bitcurator.packages.syslinux-utils
+      - sls: bitcurator.packages.testdisk
       - sls: bitcurator.packages.tree
       - sls: bitcurator.packages.ubiquity-frontend-debconf
       - sls: bitcurator.packages.udisks2
