@@ -3,4 +3,4 @@
     - source: salt://bitcurator/mounter/bc_mounter.py
     - user: root
     - group: root
-    - file_mode: keep
+    - mode: 755
