@@ -1,4 +1,4 @@
-udisks2floppy:
+floppyconfig:
   cmd.run:
     - name: |
         sed -i 's/{ID_DRIVE_FLOPPY}="1"/{ID_DRIVE_FLOPPY}="0"/' /lib/udev/rules.d/80-udisks2.rules
