@@ -6,7 +6,6 @@ include:
   - bitcurator.tools.dfxml
   - bitcurator.tools.sleuthkit
   - bitcurator.tools.pytsk
-  - bitcurator.tools.hashdb
   - bitcurator.tools.hfsexplorer
   - bitcurator.tools.lightgrep
   - bitcurator.tools.bulkextractor
@@ -15,7 +14,6 @@ include:
   - bitcurator.tools.bagitpython
   - bitcurator.tools.sdhash
   - bitcurator.tools.pyexiftoolgui
-  - bitcurator.tools.fido
   - bitcurator.tools.openpyxl
   - bitcurator.tools.regripper
   - bitcurator.tools.nsrllookup
@@ -31,7 +29,6 @@ bitcurator-tools:
       - sls: bitcurator.tools.dfxml
       - sls: bitcurator.tools.sleuthkit
       - sls: bitcurator.tools.pytsk
-      - sls: bitcurator.tools.hashdb
       - sls: bitcurator.tools.hfsexplorer
       - sls: bitcurator.tools.lightgrep
       - sls: bitcurator.tools.bulkextractor
@@ -40,7 +37,6 @@ bitcurator-tools:
       - sls: bitcurator.tools.bagitpython
       - sls: bitcurator.tools.sdhash
       - sls: bitcurator.tools.pyexiftoolgui
-      - sls: bitcurator.tools.fido
       - sls: bitcurator.tools.openpyxl
       - sls: bitcurator.tools.regripper
       - sls: bitcurator.tools.nsrllookup
