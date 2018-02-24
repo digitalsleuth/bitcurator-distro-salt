@@ -4,6 +4,9 @@ include:
   - bitcurator.env.launcher-trust
   - bitcurator.env.etc
   - bitcurator.env.lib
+  - bitcurator.env.mediasymlink
+  - bitcurator.env.mountwinalias
+  - bitcurator.env.setnoclobber
   - bitcurator.env.usr
   - bitcurator.env.vimrc
   - bitcurator.env.vim-support
@@ -17,6 +20,9 @@ bitcurator-env:
       - sls: bitcurator.env.launcher-trust
       - sls: bitcurator.env.etc
       - sls: bitcurator.env.lib
+      - sls: bitcurator.env.mediasymlink
+      - sls: bitcurator.env.mountwinalias
+      - sls: bitcurator.env.setnoclobber
       - sls: bitcurator.env.usr
       - sls: bitcurator.env.vimrc
       - sls: bitcurator.env.vim-support
