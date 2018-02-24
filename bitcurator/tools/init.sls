@@ -12,7 +12,6 @@ include:
   - bitcurator.tools.lightgrep
   - bitcurator.tools.bulkextractor
   - bitcurator.tools.bctools
-  - bitcurator.tools.disktype
   - bitcurator.tools.dumpfloppy
   - bitcurator.tools.bagitpython
   - bitcurator.tools.sdhash
@@ -39,7 +38,6 @@ bitcurator-tools:
       - sls: bitcurator.tools.lightgrep
       - sls: bitcurator.tools.bulkextractor
       - sls: bitcurator.tools.bctools
-      - sls: bitcurator.tools.disktype
       - sls: bitcurator.tools.dumpfloppy
       - sls: bitcurator.tools.bagitpython
       - sls: bitcurator.tools.sdhash
