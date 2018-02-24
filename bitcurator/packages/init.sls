@@ -89,6 +89,8 @@ include:
   - bitcurator.packages.libparse-win32registry-perl
   - bitcurator.packages.libpthread-stubs0-dev
   - bitcurator.packages.libreadline-dev
+  - bitcurator.packages.libsodium
+  - bitcurator.packages.libsodium-dev
   - bitcurator.packages.libssl-dev
   - bitcurator.packages.libtalloc-dev
   - bitcurator.packages.libtool
