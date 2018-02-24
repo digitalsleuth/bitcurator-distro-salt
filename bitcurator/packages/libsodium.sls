@@ -1,0 +1,2 @@
+libsodium:
+  pkg.installed

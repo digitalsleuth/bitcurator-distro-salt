@@ -6,7 +6,6 @@ include:
   - bitcurator.tools.dfxml
   - bitcurator.tools.sleuthkit
   - bitcurator.tools.pytsk
-  - bitcurator.tools.libsodium
   - bitcurator.tools.hashdb
   - bitcurator.tools.hfsexplorer
   - bitcurator.tools.lightgrep
@@ -32,7 +31,6 @@ bitcurator-tools:
       - sls: bitcurator.tools.dfxml
       - sls: bitcurator.tools.sleuthkit
       - sls: bitcurator.tools.pytsk
-      - sls: bitcurator.tools.libsodium
       - sls: bitcurator.tools.hashdb
       - sls: bitcurator.tools.hfsexplorer
       - sls: bitcurator.tools.lightgrep
