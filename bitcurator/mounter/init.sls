@@ -1,12 +1,12 @@
 include:
-  - bitcurator.mounter.bcmount
-  - bitcurator.mounter.bcpolicy
+  - bitcurator.mounter.bcmounter
+  - bitcurator.mounter.bcpolicyapp
   - bitcurator.mounter.bcautostart
 
 bitcurator-mounter:
   test.nop:
     - name: bitcurator-mounter
     - require:
-      - sls: bitcurator.mounter.bcmount
-      - sls: bitcurator.mounter.bcpolicy
+      - sls: bitcurator.mounter.bcmounter
+      - sls: bitcurator.mounter.bcpolicyapp
       - sls: bitcurator.mounter.bcautostart
