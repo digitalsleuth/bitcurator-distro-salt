@@ -34,10 +34,16 @@ Visit http://repo.saltstack.com/#ubuntu for additional details.
 
 ```shell
 git clone https://github.com/bitcurator/bitcurator-distro-salt /tmp/salt
-sudo salt-call -l info --local --file-root=/tmp/salt state.apply bitcurator.mods
+sudo salt-call -l info --local --file-root=/tmp/salt state.apply bitcurator.primary
 ```
 
-Once the salt process has completed, reboot the VM or host. The environment should now be a fully configured build of BitCurator.
+Once the salt call has completed, you will (currently) need to run the same command with the secondary.sls file to ensure the pip packages are installed. (This should not be necessary, but in the current configuration, the modules required for pip_installed are not reloaded - a fix is expected in a future release):
+
+```shell
+sudo salt-call -l info --local --file-root=/tmp/salt state.apply bitcurator.secondary
+```
+
+Reboot the VM or host. The environment should now be a fully configured build of BitCurator.
 
 ## What's in this repository
 
