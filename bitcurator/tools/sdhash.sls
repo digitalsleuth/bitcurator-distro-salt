@@ -10,6 +10,7 @@ sdhash:
         ldconfig
         cd /tmp
         rm -rf sdhash-3.4
+        rm v3.4.tar.gz
     - cwd: /tmp
     - shell: /bin/bash
     - timeout: 12000

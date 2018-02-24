@@ -9,6 +9,7 @@ pytsk:
         python3 setup.py install >> $HOME/bitcurator-install.log 2>&1
         cd /tmp
         rm -rf pytsk3-20160721
+        rm pytsk3-20160721.tar.gz
     - cwd: /tmp
     - shell: /bin/bash
     - timeout: 12000
