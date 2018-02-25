@@ -3,5 +3,5 @@
     - source: salt://bitcurator/mounter/bcpolicyapp.py.desktop
     - user: root
     - group: root
-    - file_mode: keep
+    - mode: 755
     - makedirs: True

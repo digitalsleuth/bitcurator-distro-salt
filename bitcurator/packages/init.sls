@@ -56,6 +56,7 @@ include:
   - bitcurator.packages.id3tool
   - bitcurator.packages.lame
   - bitcurator.packages.libappindicator1
+  - bitcurator.packages.libappindicator3-dev
   - bitcurator.packages.libarchive-dev
   - bitcurator.packages.libav-tools
   - bitcurator.packages.libavcodec-extra
@@ -221,6 +222,7 @@ bitcurator-packages:
       - sls: bitcurator.packages.id3tool
       - sls: bitcurator.packages.lame
       - sls: bitcurator.packages.libappindicator1
+      - sls: bitcurator.packages.libappindicator3-dev
       - sls: bitcurator.packages.libarchive-dev
       - sls: bitcurator.packages.libav-tools
       - sls: bitcurator.packages.libavcodec-extra
