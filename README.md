@@ -14,9 +14,7 @@ Currently tested with daily builds of Ubuntu 18.04LTS. Prior to installing and u
 ```shell
 sudo apt-get update
 sudo apt-get dist-upgrade
-sudo apt-get install git
-# Optional - dkms for persistence of kernel modules, vim editor for convenience
-sudo apt-get install dkms vim
+sudo apt install git dkms
 ```
 
 ## Installing and preparing SaltStack
@@ -24,7 +22,7 @@ sudo apt-get install dkms vim
 Current packaging of SaltStack is available in the 18.04 repositories. Simply run:
 
 ```shell
-sudo apt-get install salt-minion
+sudo apt install salt-minion
 sudo service salt-minion stop
 ```
 
@@ -37,7 +35,7 @@ git clone https://github.com/bitcurator/bitcurator-distro-salt /tmp/salt
 sudo salt-call -l info --local --file-root=/tmp/salt state.apply bitcurator.primary
 ```
 
-Once the salt call has completed, you will (currently) need to run the same command with the secondary.sls file to ensure the pip packages are installed. (This should not be necessary, but in the current configuration, the modules required for pip_installed are not reloaded - a fix is expected in a future release):
+Now run the same command with the secondary.sls file to ensure the pip packages are installed. (This should not be necessary, but in the current configuration, the modules required for pip_installed are not reloaded - a fix is expected in a future release):
 
 ```shell
 sudo salt-call -l info --local --file-root=/tmp/salt state.apply bitcurator.secondary
