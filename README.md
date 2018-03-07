@@ -7,9 +7,9 @@
 
 This repo includes relevant salt states and supporting files to build a stack of data analysis, forensics, and security tools using Ubuntu and SaltStack. This build stack is intended to support setup of the BitCurator imaging and disk analysis environment. This repo is **in development**.
 
-## Dependencies
+## Pre-Installation Setup
 
-Currently tested with daily builds of Ubuntu 18.04LTS. Prior to installing and using either SaltStack or bitcurator-distro salt, create a fresh Ubuntu 18.04LTS environment in a VM or on a dedicated host with the hostname "bitcurator" and a user named "bcadmin". Login as "bcadmin", and execute the following in a terminal:
+Create a fresh Ubuntu 18.04LTS environment in a VM or on a dedicated host with the hostname "bitcurator" and a user named "bcadmin". Login as "bcadmin", and execute the following in a terminal:
 
 ```shell
 sudo apt-get update
@@ -47,7 +47,7 @@ Reboot the VM or host. The environment should now be a fully configured build of
 
 This repo has been organized to make the process of maintaining and contributing to BitCurator development as transparent as possible. An explanation of the layout follows.
 
-The ``bitcurator'' directory contains all support files and salt states in a number of different directories:
+The **bitcurator** directory contains all support files and salt states in a number of different directories:
 
 - **attic**: Legacy and unused files that have been kept for reference or potential future use
 - **config**: Salt states and support files for environment and user configuration
