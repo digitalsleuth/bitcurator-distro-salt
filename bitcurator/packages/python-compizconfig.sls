@@ -1,2 +1,0 @@
-python-compizconfig:
-  pkg.installed
