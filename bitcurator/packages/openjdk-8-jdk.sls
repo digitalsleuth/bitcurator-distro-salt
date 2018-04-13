@@ -1,2 +1,2 @@
-openjdk-9-jdk:
+openjdk-8-jdk:
   pkg.installed

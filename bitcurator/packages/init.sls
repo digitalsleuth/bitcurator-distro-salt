@@ -112,7 +112,7 @@ include:
   - bitcurator.packages.nautilus-script-audio-convert
   - bitcurator.packages.nautilus-scripts-manager
   - bitcurator.packages.nwipe
-  - bitcurator.packages.openjdk-9-jdk
+  - bitcurator.packages.openjdk-8-jdk
   - bitcurator.packages.openssh-server
   - bitcurator.packages.plymouth-themes
   - bitcurator.packages.plymouth-x11
@@ -271,7 +271,7 @@ bitcurator-packages:
       - sls: bitcurator.packages.nautilus-script-audio-convert
       - sls: bitcurator.packages.nautilus-scripts-manager
       - sls: bitcurator.packages.nwipe
-      - sls: bitcurator.packages.openjdk-9-jdk
+      - sls: bitcurator.packages.openjdk-8-jdk
       - sls: bitcurator.packages.openssh-server
       - sls: bitcurator.packages.plymouth-themes
       - sls: bitcurator.packages.plymouth-x11
