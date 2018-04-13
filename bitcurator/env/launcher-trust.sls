@@ -14,7 +14,6 @@ launcher-trust:
         gio set /home/bcadmin/Desktop/Additional\ Tools/identfile.desktop "metadata::trusted" yes
         gio set /home/bcadmin/Desktop/Additional\ Tools/nwipe.desktop "metadata::trusted" yes
         gio set /home/bcadmin/Desktop/Additional\ Tools/readpst.desktop "metadata::trusted" yes
-        gio set /home/bcadmin/Desktop/Additional\ Tools/recoll-searchgui.desktop "metadata::trusted" yes
         gio set /home/bcadmin/Desktop/Additional\ Tools/vlc.desktop "metadata::trusted" yes
         gio set /home/bcadmin/Desktop/Forensics\ and\ Reporting/BEViewer.desktop "metadata::trusted" yes
         gio set /home/bcadmin/Desktop/Forensics\ and\ Reporting/bcdat.desktop "metadata::trusted" yes

@@ -2,6 +2,7 @@ include:
   - bitcurator.env.desktop-folders
   - bitcurator.env.dot-local
   - bitcurator.env.launcher-trust
+  - bitcurator.env.ltdesktop
   - bitcurator.env.etc
   - bitcurator.env.lib
   - bitcurator.env.mediasymlink
@@ -19,6 +20,7 @@ bitcurator-env:
       - sls: bitcurator.env.desktop-folders
       - sls: bitcurator.env.dot-local
       - sls: bitcurator.env.launcher-trust
+      - sls: bitcurator.env.ltdesktop
       - sls: bitcurator.env.etc
       - sls: bitcurator.env.lib
       - sls: bitcurator.env.mediasymlink
