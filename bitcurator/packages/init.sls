@@ -129,6 +129,7 @@ include:
   - bitcurator.packages.python3-virtualenv
   - bitcurator.packages.pst-utils
   - bitcurator.packages.sharutils
+  - bitcurator.packages.siegfried
   - bitcurator.packages.smartmontools
   - bitcurator.packages.squashfs-tools
   - bitcurator.packages.ssdeep
@@ -282,6 +283,7 @@ bitcurator-packages:
       - sls: bitcurator.packages.python3-virtualenv
       - sls: bitcurator.packages.pst-utils
       - sls: bitcurator.packages.sharutils
+      - sls: bitcurator.packages.siegfried
       - sls: bitcurator.packages.smartmontools
       - sls: bitcurator.packages.squashfs-tools
       - sls: bitcurator.packages.ssdeep

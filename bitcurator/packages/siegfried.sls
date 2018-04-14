@@ -1,0 +1,2 @@
+siegfried:
+  pkg.installed
