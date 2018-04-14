@@ -1,2 +1,2 @@
-readpst:
+pst-utils:
   pkg.installed

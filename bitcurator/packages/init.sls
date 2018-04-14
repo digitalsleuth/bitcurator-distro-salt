@@ -127,7 +127,7 @@ include:
   - bitcurator.packages.python3-sip-dev
   - bitcurator.packages.python3-tk
   - bitcurator.packages.python3-virtualenv
-  - bitcurator.packages.readpst
+  - bitcurator.packages.pst-utils
   - bitcurator.packages.sharutils
   - bitcurator.packages.smartmontools
   - bitcurator.packages.squashfs-tools
@@ -280,7 +280,7 @@ bitcurator-packages:
       - sls: bitcurator.packages.python3-sip-dev
       - sls: bitcurator.packages.python3-tk
       - sls: bitcurator.packages.python3-virtualenv
-      - sls: bitcurator.packages.readpst
+      - sls: bitcurator.packages.pst-utils
       - sls: bitcurator.packages.sharutils
       - sls: bitcurator.packages.smartmontools
       - sls: bitcurator.packages.squashfs-tools
