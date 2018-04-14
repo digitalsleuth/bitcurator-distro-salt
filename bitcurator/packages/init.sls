@@ -37,7 +37,6 @@ include:
   - bitcurator.packages.gksu
   - bitcurator.packages.gnome-sushi
   - bitcurator.packages.gnome-system-tools
-  - bitcurator.packages.gradle
   - bitcurator.packages.grsync
   - bitcurator.packages.gtkhash
   - bitcurator.packages.guymager
@@ -71,9 +70,6 @@ include:
   - bitcurator.packages.libexif-dev
   - bitcurator.packages.libexpat1-dev
   - bitcurator.packages.libfuse-dev
-  - bitcurator.packages.libgnomeui-0
-  - bitcurator.packages.libgnomeui-dev
-  - bitcurator.packages.libgtk2-dot-0-dev
   - bitcurator.packages.libicu-dev
   - bitcurator.packages.libimage-exiftool-perl
   - bitcurator.packages.libmad0
@@ -99,7 +95,6 @@ include:
   - bitcurator.packages.libxml2-dev
   - bitcurator.packages.libxslt-dev
   - bitcurator.packages.linux-headers-generic
-  - bitcurator.packages.maven
   - bitcurator.packages.md5deep
   - bitcurator.packages.mediainfo
   - bitcurator.packages.mencoder
@@ -197,7 +192,6 @@ bitcurator-packages:
       - sls: bitcurator.packages.git-svn
       - sls: bitcurator.packages.gnome-sushi
       - sls: bitcurator.packages.gnome-system-tools
-      - sls: bitcurator.packages.gradle
       - sls: bitcurator.packages.grsync
       - sls: bitcurator.packages.gtkhash
       - sls: bitcurator.packages.guymager
@@ -231,9 +225,6 @@ bitcurator-packages:
       - sls: bitcurator.packages.libexif-dev
       - sls: bitcurator.packages.libexpat1-dev
       - sls: bitcurator.packages.libfuse-dev
-      - sls: bitcurator.packages.libgnomeui-0
-      - sls: bitcurator.packages.libgnomeui-dev
-      - sls: bitcurator.packages.libgtk2-dot-0-dev
       - sls: bitcurator.packages.libicu-dev
       - sls: bitcurator.packages.libimage-exiftool-perl
       - sls: bitcurator.packages.libmad0
@@ -257,7 +248,6 @@ bitcurator-packages:
       - sls: bitcurator.packages.libxml2-dev
       - sls: bitcurator.packages.libxslt-dev
       - sls: bitcurator.packages.linux-headers-generic
-      - sls: bitcurator.packages.maven
       - sls: bitcurator.packages.md5deep
       - sls: bitcurator.packages.mediainfo
       - sls: bitcurator.packages.mencoder

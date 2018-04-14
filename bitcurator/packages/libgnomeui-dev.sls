@@ -1,2 +1,0 @@
-libgnomeui-dev:
-  pkg.installed
