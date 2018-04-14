@@ -1,5 +1,4 @@
 include:
-  - bitcurator.packages.ant
   - bitcurator.packages.antiword
   - bitcurator.packages.aufs-tools
   - bitcurator.packages.automake
@@ -161,7 +160,6 @@ bitcurator-packages:
   test.nop:
     - name: bitcurator-packages
     - require:
-      - sls: bitcurator.packages.ant
       - sls: bitcurator.packages.antiword
       - sls: bitcurator.packages.aufs-tools
       - sls: bitcurator.packages.automake
