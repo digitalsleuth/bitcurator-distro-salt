@@ -1,4 +1,4 @@
-lightgrep:
+cmdinstall:
   cmd.run:
     - name: |
         pip install analyzemft
