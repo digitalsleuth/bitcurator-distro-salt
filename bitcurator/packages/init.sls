@@ -81,7 +81,7 @@ include:
   - bitcurator.packages.libparse-win32registry-perl
   - bitcurator.packages.libpthread-stubs0-dev
   - bitcurator.packages.libreadline-dev
-  - bitcurator.packages.libsodium
+  - bitcurator.packages.libsodium23
   - bitcurator.packages.libsodium-dev
   - bitcurator.packages.libssl-dev
   - bitcurator.packages.libtalloc-dev
@@ -191,6 +191,7 @@ bitcurator-packages:
       - sls: bitcurator.packages.ghex
       - sls: bitcurator.packages.git
       - sls: bitcurator.packages.git-svn
+      - sls: bitcurator.packages.gksu
       - sls: bitcurator.packages.gnome-sushi
       - sls: bitcurator.packages.gnome-system-tools
       - sls: bitcurator.packages.grsync
@@ -237,6 +238,8 @@ bitcurator-packages:
       - sls: bitcurator.packages.libparse-win32registry-perl
       - sls: bitcurator.packages.libpthread-stubs0-dev
       - sls: bitcurator.packages.libreadline-dev
+      - sls: bitcurator.packages.libsodium23
+      - sls: bitcurator.packages.libsodium-dev
       - sls: bitcurator.packages.libssl-dev
       - sls: bitcurator.packages.libtalloc-dev
       - sls: bitcurator.packages.libtool
