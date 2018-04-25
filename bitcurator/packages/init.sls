@@ -25,6 +25,7 @@ include:
   - bitcurator.packages.expat
   - bitcurator.packages.expect
   - bitcurator.packages.fdutils
+  - bitcurator.packages.ffmpeg
   - bitcurator.packages.flex
   - bitcurator.packages.fslint
   - bitcurator.packages.g++
@@ -34,7 +35,6 @@ include:
   - bitcurator.packages.ghex
   - bitcurator.packages.git
   - bitcurator.packages.git-svn
-  - bitcurator.packages.gksu
   - bitcurator.packages.gnome-sushi
   - bitcurator.packages.gnome-system-tools
   - bitcurator.packages.grsync
@@ -52,7 +52,6 @@ include:
   - bitcurator.packages.libappindicator1
   - bitcurator.packages.libappindicator3-dev
   - bitcurator.packages.libarchive-dev
-  - bitcurator.packages.libav-tools
   - bitcurator.packages.libavcodec-extra
   - bitcurator.packages.libboost-dev
   - bitcurator.packages.libboost-filesystem-dev
@@ -183,6 +182,7 @@ bitcurator-packages:
       - sls: bitcurator.packages.expat
       - sls: bitcurator.packages.expect
       - sls: bitcurator.packages.fdutils
+      - sls: bitcurator.packages.ffmpeg
       - sls: bitcurator.packages.flex
       - sls: bitcurator.packages.fslint
       - sls: bitcurator.packages.g++
@@ -192,7 +192,6 @@ bitcurator-packages:
       - sls: bitcurator.packages.ghex
       - sls: bitcurator.packages.git
       - sls: bitcurator.packages.git-svn
-      - sls: bitcurator.packages.gksu
       - sls: bitcurator.packages.gnome-sushi
       - sls: bitcurator.packages.gnome-system-tools
       - sls: bitcurator.packages.grsync
@@ -210,7 +209,6 @@ bitcurator-packages:
       - sls: bitcurator.packages.libappindicator1
       - sls: bitcurator.packages.libappindicator3-dev
       - sls: bitcurator.packages.libarchive-dev
-      - sls: bitcurator.packages.libav-tools
       - sls: bitcurator.packages.libavcodec-extra
       - sls: bitcurator.packages.libboost-dev
       - sls: bitcurator.packages.libboost-filesystem-dev

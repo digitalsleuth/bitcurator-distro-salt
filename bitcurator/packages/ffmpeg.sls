@@ -1,2 +1,2 @@
-gksu:
+ffmpeg:
   pkg.installed
