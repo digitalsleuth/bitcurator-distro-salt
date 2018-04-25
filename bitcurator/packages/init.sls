@@ -83,6 +83,7 @@ include:
   - bitcurator.packages.libreadline-dev
   - bitcurator.packages.libsodium23
   - bitcurator.packages.libsodium-dev
+  - bitcurator.packages.libsqlite3-dev
   - bitcurator.packages.libssl-dev
   - bitcurator.packages.libtalloc-dev
   - bitcurator.packages.libtool
@@ -240,6 +241,7 @@ bitcurator-packages:
       - sls: bitcurator.packages.libreadline-dev
       - sls: bitcurator.packages.libsodium23
       - sls: bitcurator.packages.libsodium-dev
+      - sls: bitcurator.packages.libsqlite3-dev
       - sls: bitcurator.packages.libssl-dev
       - sls: bitcurator.packages.libtalloc-dev
       - sls: bitcurator.packages.libtool
