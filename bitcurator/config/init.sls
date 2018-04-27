@@ -2,7 +2,6 @@ include:
   - bitcurator.config.hostname
   - bitcurator.config.user
   - bitcurator.config.timezone
-  - bitcurator.config.folders
   - bitcurator.config.icon-setup
   - bitcurator.config.mount-setup
   - bitcurator.config.background-setup
@@ -15,7 +14,6 @@ bitcurator-config:
       - sls: bitcurator.config.hostname
       - sls: bitcurator.config.user
       - sls: bitcurator.config.timezone
-      - sls: bitcurator.config.folders
       - sls: bitcurator.config.icon-setup
       - sls: bitcurator.config.mount-setup
       - sls: bitcurator.config.background-setup
