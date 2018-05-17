@@ -90,6 +90,7 @@ include:
   - bitcurator.packages.libtre-dev
   - bitcurator.packages.libtre5
   - bitcurator.packages.libudev-dev
+  - bitcurator.packages.libusb-dev
   - bitcurator.packages.libvte-common
   - bitcurator.packages.libvte9
   - bitcurator.packages.libxml2-dev
@@ -247,6 +248,7 @@ bitcurator-packages:
       - sls: bitcurator.packages.libtre-dev
       - sls: bitcurator.packages.libtre5
       - sls: bitcurator.packages.libudev-dev
+      - sls: bitcurator.packages.libusb-dev
       - sls: bitcurator.packages.libvte-common
       - sls: bitcurator.packages.libvte9
       - sls: bitcurator.packages.libxml2-dev
