@@ -25,6 +25,7 @@ launcher-trust:
         gio set /home/bcadmin/Desktop/Forensics\ and\ Reporting/fslint.desktop "metadata::trusted" yes
         gio set /home/bcadmin/Desktop/Forensics\ and\ Reporting/hashdb.desktop "metadata::trusted" yes
         gio set /home/bcadmin/Desktop/Forensics\ and\ Reporting/md5deep.desktop "metadata::trusted" yes
+        gio set /home/bcadmin/Desktop/Forensics\ and\ Reporting/nsrllookup.desktop "metadata::trusted" yes
         gio set /home/bcadmin/Desktop/Forensics\ and\ Reporting/photorec.desktop "metadata::trusted" yes
         gio set /home/bcadmin/Desktop/Forensics\ and\ Reporting/pyexiftoolgui.desktop "metadata::trusted" yes
         gio set /home/bcadmin/Desktop/Forensics\ and\ Reporting/regripper.desktop "metadata::trusted" yes
