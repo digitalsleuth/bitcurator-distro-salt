@@ -39,7 +39,7 @@ include:
   - bitcurator.packages.gnome-system-tools
   - bitcurator.packages.grsync
   - bitcurator.packages.gtkhash
-  - bitcurator.packages.guymager
+  - bitcurator.packages.guymager-beta
   - bitcurator.packages.hardinfo
   - bitcurator.packages.hdparm
   - bitcurator.packages.hfsplus
@@ -129,6 +129,7 @@ include:
   - bitcurator.packages.python3-tk
   - bitcurator.packages.python3-virtualenv
   - bitcurator.packages.pst-utils
+  - bitcurator.packages.samba
   - bitcurator.packages.sharutils
   - bitcurator.packages.siegfried
   - bitcurator.packages.smartmontools
@@ -138,6 +139,7 @@ include:
   - bitcurator.packages.swig
   - bitcurator.packages.synaptic
   - bitcurator.packages.syslinux-utils
+  - bitcurator.packages.system-config-samba
   - bitcurator.packages.testdisk
   - bitcurator.packages.tree
   - bitcurator.packages.ubiquity-frontend-debconf
@@ -197,7 +199,7 @@ bitcurator-packages:
       - sls: bitcurator.packages.gnome-system-tools
       - sls: bitcurator.packages.grsync
       - sls: bitcurator.packages.gtkhash
-      - sls: bitcurator.packages.guymager
+      - sls: bitcurator.packages.guymager-beta
       - sls: bitcurator.packages.hardinfo
       - sls: bitcurator.packages.hdparm
       - sls: bitcurator.packages.hfsplus
@@ -287,6 +289,7 @@ bitcurator-packages:
       - sls: bitcurator.packages.python3-tk
       - sls: bitcurator.packages.python3-virtualenv
       - sls: bitcurator.packages.pst-utils
+      - sls: bitcurator.packages.samba
       - sls: bitcurator.packages.sharutils
       - sls: bitcurator.packages.siegfried
       - sls: bitcurator.packages.smartmontools
@@ -296,6 +299,7 @@ bitcurator-packages:
       - sls: bitcurator.packages.swig
       - sls: bitcurator.packages.synaptic
       - sls: bitcurator.packages.syslinux-utils
+      - sls: bitcurator.packages.system-config-samba
       - sls: bitcurator.packages.testdisk
       - sls: bitcurator.packages.tree
       - sls: bitcurator.packages.ubiquity-frontend-debconf
