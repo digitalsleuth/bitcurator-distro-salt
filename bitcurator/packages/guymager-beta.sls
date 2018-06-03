@@ -1,2 +1,2 @@
-guymager:
+guymager-beta:
   pkg.installed

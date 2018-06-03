@@ -3,6 +3,7 @@ include:
   - bitcurator.repos.ubuntu-universe
   - bitcurator.repos.ubuntu-tweak
   - bitcurator.repos.siegfried-repo
+  - bitcurator.repos.guymager-repo
 
 
 bitcurator-repos:
@@ -13,3 +14,4 @@ bitcurator-repos:
       - sls: bitcurator.repos.ubuntu-universe
       - sls: bitcurator.repos.ubuntu-tweak
       - sls: bitcurator.repos.siegfried-repo
+      - sls: bitcurator.repos.guymager-repo
