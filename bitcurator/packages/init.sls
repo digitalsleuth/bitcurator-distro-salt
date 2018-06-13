@@ -114,6 +114,7 @@ include:
   - bitcurator.packages.python-appindicator
   - bitcurator.packages.python-magic
   - bitcurator.packages.python-pip
+  - bitcurator.packages.python-pyicu
   - bitcurator.packages.python-pyside
   - bitcurator.packages.python-sphinx
   - bitcurator.packages.python-tk
@@ -274,6 +275,7 @@ bitcurator-packages:
       - sls: bitcurator.packages.python-appindicator
       - sls: bitcurator.packages.python-magic
       - sls: bitcurator.packages.python-pip
+      - sls: bitcurator.packages.python-pyicu
       - sls: bitcurator.packages.python-pyside
       - sls: bitcurator.packages.python-sphinx
       - sls: bitcurator.packages.python-tk
