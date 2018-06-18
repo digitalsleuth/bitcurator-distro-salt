@@ -17,6 +17,7 @@ include:
   - bitcurator.tools.openpyxl
   - bitcurator.tools.regripper
   - bitcurator.tools.nsrllookup
+  - bitcurator.tools.pinguybuilder
 
 bitcurator-tools:
   test.nop:
@@ -40,3 +41,4 @@ bitcurator-tools:
       - sls: bitcurator.tools.openpyxl
       - sls: bitcurator.tools.regripper
       - sls: bitcurator.tools.nsrllookup
+      - sls: bitcurator.tools.pinguybuilder
