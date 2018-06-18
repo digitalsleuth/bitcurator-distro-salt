@@ -3,7 +3,7 @@ pinguybuilder:
     - name: |
         cp /tmp/salt/bitcurator/externals/pinguybuilder_5.1-3_all.deb /tmp
         cd /tmp
-        dpgk -i pinguybuilder_5.1-3_all.deb
+        dpkg -i pinguybuilder_5.1-3_all.deb
         rm pinguybuilder_5.1-3_all.deb
     - cwd: /tmp
     - shell: /bin/bash
