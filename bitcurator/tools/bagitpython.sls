@@ -4,7 +4,7 @@ bagitpython:
         cd /tmp
         git clone https://github.com/LibraryOfCongress/bagit-python
         cd bagit-python
-        pip install bagit
+        python2.7 setup.py install
         cd /tmp
         rm -rf bagit-python
     - cwd: /tmp
