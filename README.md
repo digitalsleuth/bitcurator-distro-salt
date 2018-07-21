@@ -5,7 +5,9 @@
 [![GitHub issues](https://img.shields.io/github/issues/bitcurator/bitcurator-distro-salt.svg)](https://github.com/bitcurator/bitcurator-distro-salt/issues)
 [![GitHub forks](https://img.shields.io/github/forks/bitcurator/bitcurator-distro-salt.svg)](https://github.com/bitcurator/bitcurator-distro-salt/network)
 
-This repo includes relevant salt states and supporting files to build a stack of data analysis, forensics, and security tools using Ubuntu and SaltStack. This build stack is intended to support setup of the BitCurator imaging and disk analysis environment. This repo is **in development**.
+This repo includes relevant salt states and supporting files to build a stack of data analysis, forensics, and security tools using Ubuntu and SaltStack. This build stack is intended to support setup of the BitCurator imaging and disk analysis environment.
+
+Visit https://github.com/BitCurator/bitcurator-distro/wiki/Releases to download the latest release built using this repo!
 
 ## Pre-Installation Setup
 
