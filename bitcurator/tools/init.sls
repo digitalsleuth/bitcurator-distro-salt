@@ -3,7 +3,6 @@ include:
   - bitcurator.tools.libuna
   - bitcurator.tools.libewf
   - bitcurator.tools.afflibv3
-  - bitcurator.tools.dfxml
   - bitcurator.tools.sleuthkit
   - bitcurator.tools.pytsk
   - bitcurator.tools.hfsexplorer
@@ -27,7 +26,6 @@ bitcurator-tools:
       - sls: bitcurator.tools.libuna
       - sls: bitcurator.tools.libewf
       - sls: bitcurator.tools.afflibv3
-      - sls: bitcurator.tools.dfxml
       - sls: bitcurator.tools.sleuthkit
       - sls: bitcurator.tools.pytsk
       - sls: bitcurator.tools.hfsexplorer

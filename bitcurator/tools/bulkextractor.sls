@@ -9,6 +9,7 @@ bulkextractor:
         make -s
         make install
         ldconfig
+        cp -r src/dfxml /usr/share
         cp python/identify_filenames.py /usr/share/dfxml/python
         chmod 755 /usr/share/dfxml/python/identify_filenames.py
         cp python/bulk_extractor_reader.py /usr/share/dfxml/python
