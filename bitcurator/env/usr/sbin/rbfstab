@@ -29,7 +29,6 @@
 ## Variables
 PATH="/bin:/sbin:/usr/bin:/usr/sbin"
 TMP="/tmp/fstab.$$.tmp"
-TMP2="/tmp/fstab-debug.$$.tmp"
 ADDEDBY="# by rbfstab"
 WRITE_LABEL="RBFSTAB"
 SCRIPT=/usr/sbin/${0##*/}
@@ -159,7 +158,6 @@ do
 
     ## In BitCurator, only block USB devices. Skip any non-USB devices
     ISUSB=$(udevadm info --query=all --name="$DEVICE" | grep ID_BUS)
-    echo "$ISUSB" > "$TMP2"
     if [ "$ISUSB" != "E: ID_BUS=usb" ]; then
         continue
     fi
