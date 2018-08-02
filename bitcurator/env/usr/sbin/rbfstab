@@ -25,11 +25,12 @@
 #: 06/22/16          : v0.1.6. Various udpates. Fixed a KERNEL rules issue.
 #: 11/21/16          : v0.1.7 Rolled back KERNEL rule limit due to Virtualbox issue
 #: 08/01/18          : v0.1.8 Simplified rbfstab rules again, only target /dev/sd?*
-#                    : for USB devices.
+#                    : for USB devices. Changed fstab tmp location to /etc, as
+#                    : /tmp is handled unpredictably on startup (sometimes causes fstab loss)
 
 ## Variables
 PATH="/bin:/sbin:/usr/bin:/usr/sbin"
-TMP="/tmp/fstab.$$.tmp"
+TMP="/etc/fstab.$$.tmp"
 ADDEDBY="# by rbfstab"
 WRITE_LABEL="RBFSTAB"
 SCRIPT=/usr/sbin/${0##*/}
