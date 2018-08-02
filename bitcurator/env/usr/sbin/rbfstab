@@ -2,11 +2,12 @@
 #: Title             : rbfstab
 #: Original Author   : "John Lehr" <slo.sleuth@gmail.com>
 #: This Version      : BitCurator Team
-#: Date              : 6/22/2016
-#: Version           : 0.1.6
+#: Date              : 8/1/2018
+#: Version           : 0.1.8
 #:
 #: Desc              : rewrite fstab on hotplug for write protection
 #: Desc              : Modified for persistent BitCurator installs and VirtualBox use
+#: Desc              : Modified to ONLY manage USB devices in the BitCurator environment
 #:
 #: Options           : -i install, -r remove
 #: 08/23/11          : v0.1.0, first release
