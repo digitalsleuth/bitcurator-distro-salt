@@ -67,8 +67,8 @@ sudo salt-call --local --file-root=/tmp/bitcurator state.sls bitcurator.packages
 Salt may also be installed from a dedicated repo (if needed for alternate buidls):
 
 ```shell
-wget -O - https://repo.saltstack.com/apt/ubuntu/16.04/amd64/latest/SALTSTACK-GPG-KEY.pub | sudo apt-key add -
-echo "deb http://repo.saltstack.com/apt/ubuntu/16.04/amd64/latest xenial main" | sudo tee /etc/apt/sources.list.d/saltstack.list
+wget -O - https://repo.saltstack.com/apt/ubuntu/18.04/amd64/latest/SALTSTACK-GPG-KEY.pub | sudo apt-key add -
+echo "deb http://repo.saltstack.com/apt/ubuntu/18.04/amd64/latest bionic main" | sudo tee /etc/apt/sources.list.d/saltstack.list
 sudo apt-get update
 sudo apt-get install salt-minion
 sudo service salt-minion stop
