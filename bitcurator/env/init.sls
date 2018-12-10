@@ -9,6 +9,7 @@ include:
   - bitcurator.env.mountwinalias
   - bitcurator.env.setnoclobber
   - bitcurator.env.floppyconfig
+  - bitcurator.env.ficlam
   - bitcurator.env.usr
   - bitcurator.env.vimrc
   - bitcurator.env.vim-support
@@ -27,6 +28,7 @@ bitcurator-env:
       - sls: bitcurator.env.mountwinalias
       - sls: bitcurator.env.setnoclobber
       - sls: bitcurator.env.floppyconfig
+      - sls: bitcurator.env.ficlam
       - sls: bitcurator.env.usr
       - sls: bitcurator.env.vimrc
       - sls: bitcurator.env.vim-support
