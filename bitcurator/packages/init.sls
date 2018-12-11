@@ -14,6 +14,7 @@ include:
   - bitcurator.packages.clamtk
   - bitcurator.packages.clonezilla
   - bitcurator.packages.cmake
+  - bitcurator.packages.curl
   - bitcurator.packages.dcfldd
   - bitcurator.packages.dconf-tools
   - bitcurator.packages.dialog
@@ -175,6 +176,7 @@ bitcurator-packages:
       - sls: bitcurator.packages.clamtk
       - sls: bitcurator.packages.clonezilla
       - sls: bitcurator.packages.cmake
+      - sls: bitcurator.packages.curl
       - sls: bitcurator.packages.dcfldd
       - sls: bitcurator.packages.dconf-tools
       - sls: bitcurator.packages.dialog
