@@ -32,6 +32,7 @@ launcher-trust:
         gio set /home/bcadmin/Desktop/Forensics\ and\ Reporting/sdhash.desktop "metadata::trusted" yes
         gio set /home/bcadmin/Desktop/Forensics\ and\ Reporting/ssdeep.desktop "metadata::trusted" yes
         gio set /home/bcadmin/Desktop/Forensics\ and\ Reporting/testdisk.desktop "metadata::trusted" yes
+        gio set /home/bcadmin/Desktop/Imaging\ and\ Recovery/brasero.desktop "metadata::trusted" yes
         gio set /home/bcadmin/Desktop/Imaging\ and\ Recovery/cdrdao.desktop "metadata::trusted" yes
         gio set /home/bcadmin/Desktop/Imaging\ and\ Recovery/clonezilla.desktop "metadata::trusted" yes
         gio set /home/bcadmin/Desktop/Imaging\ and\ Recovery/dcfldd.desktop "metadata::trusted" yes
