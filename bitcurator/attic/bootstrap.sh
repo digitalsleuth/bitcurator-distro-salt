@@ -1167,10 +1167,6 @@ configure_ubuntu_bitcurator_vm() {
         # NOTE! The spaces matter here!
         sed -i 's/AffEnabled              = false/AffEnabled              = TRUE/' /etc/guymager/guymager.cfg
 
-  #echoinfo "BitCurator VM: Change to Cultural Heritage Language"
-#		sed -i "s/Language='auto'/Language='en-CH'/" /etc/guymager/guymager.cfg
-
-
   # To fix: piix4_smbus
   #         rapl_domains no package found
 
