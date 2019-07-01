@@ -30,4 +30,4 @@ read -p "Username: " USERID
 #echo $USERID
 
 echoinfo "Installing BitCurator tools and scripts..."
-salt-call -l info --local state.sls bitcurator.primary pillar='{"bitcurator_version": "dev", "bitcurator_user": $USERID}'
+salt-call -l info --local state.sls bitcurator.primary pillar='{"bitcurator_version": "dev", "bitcurator_user": '$USERID'}'
