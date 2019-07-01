@@ -1,5 +1,4 @@
 include:
-  - bitcurator.config.hostname
   - bitcurator.config.user
   - bitcurator.config.timezone
   - bitcurator.config.icon-setup
@@ -11,7 +10,6 @@ bitcurator-config:
   test.nop:
     - name: bitcurator-config
     - require:
-      - sls: bitcurator.config.hostname
       - sls: bitcurator.config.user
       - sls: bitcurator.config.timezone
       - sls: bitcurator.config.icon-setup
