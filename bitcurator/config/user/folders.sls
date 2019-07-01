@@ -1,4 +1,4 @@
-{%- set user = salt['pillar.get']('bitcurator_user', 'bcadmin') -%}
+{% set user = salt['pillar.get']('bitcurator_user') %}
 
 include:
   - .user

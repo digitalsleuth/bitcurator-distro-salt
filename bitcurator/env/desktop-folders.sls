@@ -1,7 +1,9 @@
-/home/bcadmin/Desktop:
+{% set user = salt['pillar.get']('bitcurator_user') %}
+
+/home/{{ user }}/Desktop:
   file.recurse:
     - source: salt://bitcurator/env/desktop-folders
-    - user: bcadmin
-    - group: bcadmin
+    - user: {{ user }}
+    - group: {{ user }}
     - makedirs: True
     - file_mode: keep

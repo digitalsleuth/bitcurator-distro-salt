@@ -1,3 +1,5 @@
+{% set user = salt['pillar.get']('bitcurator_user') %}
+
 pyexiftoolgui:
   cmd.run:
     - name: |
@@ -13,8 +15,8 @@ pyexiftoolgui:
         cd /tmp
         rm -rf pyExifToolGUI-0.5
         rm 0.5.tar.gz
-        chown bcadmin /home/bcadmin/.pyexiftoolgui
-        chgrp bcadmin /home/bcadmin/.pyexiftoolgui
+        chown {{ user }} /home/{{ user }}/.pyexiftoolgui
+        chgrp {{ user }} /home/{{ user }}/.pyexiftoolgui
     - cwd: /tmp
     - shell: /bin/bash
     - timeout: 12000

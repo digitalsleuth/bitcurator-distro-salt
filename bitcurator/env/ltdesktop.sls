@@ -1,4 +1,6 @@
-/home/bcadmin/.config/autostart/launcher-trust.desktop:
+{% set user = salt['pillar.get']('bitcurator_user') %}
+
+/home/{{ user }}/.config/autostart/launcher-trust.desktop:
   file.managed:
     - source: salt://bitcurator/env/launcher-trust.desktop
     - user: root
