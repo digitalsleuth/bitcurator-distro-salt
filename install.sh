@@ -23,7 +23,7 @@ service salt-minion stop
 echoinfo "Getting latest BitCurator release files..."
 git clone https://github.com/bitcurator/bitcurator-distro-salt /srv/salt
 cd /srv/salt
-git checkout -b ENHANCEMENT-install
+git checkout ENHANCEMENT-install
 
 echoinfo "BitCurator provides desktop customizations (desktop folder icons, an appindicator to disable USB write access, and a custom background) for an existing user. Please enter the username now."
 read -p "Username: " USERID
