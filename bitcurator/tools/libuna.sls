@@ -1,7 +1,7 @@
 libuna:
   cmd.run:
     - name: |
-        cp /tmp/salt/bitcurator/externals/libuna-alpha-20150927.tar.gz /tmp
+        cp /srv/salt/bitcurator/externals/libuna-alpha-20150927.tar.gz /tmp
         cd /tmp
         tar zxf libuna-alpha-20150927.tar.gz 
         cd libuna-20150927
