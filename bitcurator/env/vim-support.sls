@@ -1,17 +1,19 @@
-/home/bcadmin/.vim:
+{% set user = salt['pillar.get']('bitcurator_user') %}
+
+/home/{{ user }}/.vim:
   file.recurse:
     - source: salt://bitcurator/env/.vim
-    - user: bcadmin
-    - group: bcadmin
+    - user: {{ user }}
+    - group: {{ user }}
     - makedirs: True
     - file_mode: keep
 
   cmd.run:
     - name: |
-        mkdir /home/bcadmin/.vim/backups
-        mkdir /home/bcadmin/.vim/swaps
+        mkdir /home/{{ user }}/.vim/backups
+        mkdir /home/{{ user }}/.vim/swaps
     - cwd: /tmp
-    - user: bcadmin
-    - group: bcadmin
+    - user: {{ user }}
+    - group: {{ user }}
     - shell: /bin/bash
     - timeout: 12000

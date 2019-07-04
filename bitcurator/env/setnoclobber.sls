@@ -1,9 +1,11 @@
+{% set user = salt['pillar.get']('bitcurator_user') %}
+
 setnoclobber:
   cmd.run:
     - name: |
-        if ! grep -i "set -o noclobber" /home/bcadmin/.bashrc > /dev/null 2>&1
+        if ! grep -i "set -o noclobber" /home/{{ user }}/.bashrc > /dev/null 2>&1
         then
-                echo "set -o noclobber" >> /home/bcadmin/.bashrc
+                echo "set -o noclobber" >> /home/{{ user }}/.bashrc
         fi
         if ! grep -i "set -o noclobber" /root/.bashrc > /dev/null 2>&1
         then

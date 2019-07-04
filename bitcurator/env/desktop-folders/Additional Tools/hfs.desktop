@@ -2,7 +2,6 @@
 Name=HFS Explorer
 GenericName=HFS Explorer
 Comment=Explore HFS
-#Exec=/home/bcadmin/Tools/HFSExplorer/bc-runfsb.sh %F
 Exec=/usr/share/hfsexplorer/bin/./hfsexplorer %F
 Terminal=false
 Type=Application

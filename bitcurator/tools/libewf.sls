@@ -1,7 +1,7 @@
 libewf:
   cmd.run:
     - name: |
-        cp /tmp/salt/bitcurator/externals/libewf-20140608.tar.gz /tmp
+        cp /srv/salt/bitcurator/externals/libewf-20140608.tar.gz /tmp
         cd /tmp
         tar zxf libewf-20140608.tar.gz
         cd libewf-20140608

@@ -1,4 +1,4 @@
-{%- set hostname = salt['pillar.get']('bitcurator_hostname', 'bitcurator') -%}
+{% set hostname = salt['pillar.get']('bitcurator_hostname', 'bitcurator') %}
 /etc/hostname:
   file.managed:
     - contents: {{ hostname }}

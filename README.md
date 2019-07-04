@@ -13,15 +13,27 @@ Visit https://github.com/BitCurator/bitcurator-distro/wiki/Releases to download 
 
 ## Pre-Installation Setup
 
-Create a fresh Ubuntu 18.04LTS environment in a VM or on a dedicated host with the hostname "bitcurator" and a user named "bcadmin". Login as "bcadmin", and execute the following in a terminal:
+Create a fresh Ubuntu 18.04LTS environment in a VM or on a dedicated host. To replicate the official release, use the hostname "bitcurator" and create a user named "bcadmin". However, you may use any hostname and username you wish in the following steps. Log in and execute the following in a terminal:
 
 ```shell
 sudo apt-get update
 sudo apt-get dist-upgrade
-sudo apt install git dkms
+sudo apt install git
 ```
 
-## Installing and preparing SaltStack
+## Simple install
+
+A simple bash installer script is provided in our bitcurator-distro-installer repository which automates most of the install process. You can install all of the BitCurator tools and desktop support files for any user with this dedicated installation script. Simply run the following in a terminal:
+
+```shell
+git clone https://github.com/bitcurator/bitcurator-distro-installer
+cd bitcurator-distro-installer
+sudo ./install.sh
+```
+
+You will be prompted for a username corresponding to an existing user. Type the username and hit enter. Note! The installation may take an hour or longer to complete.
+
+## Manual install
 
 Current packaging of SaltStack is available in the 18.04 repositories. Simply run:
 
@@ -32,11 +44,11 @@ sudo service salt-minion stop
 
 Visit http://repo.saltstack.com/#ubuntu for additional details.
 
-## Installing and running from this repo
+Next, clone this repository and run the required salt-call:
 
 ```shell
-git clone https://github.com/bitcurator/bitcurator-distro-salt /tmp/salt
-sudo salt-call -l info --local --file-root=/tmp/salt state.apply bitcurator.primary
+sudo git clone https://github.com/bitcurator/bitcurator-distro-salt /srv/salt
+sudo salt-call -l info --local state.sls bitcurator.primary pillar='{"bitcurator_version": "dev", "bitcurator_user": "TYPE_YOUR_USERNAME_HERE"}'
 ```
 
 Reboot the VM or host. The environment should now be a fully configured build of BitCurator.

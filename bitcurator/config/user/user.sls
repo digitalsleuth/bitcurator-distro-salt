@@ -1,11 +1,11 @@
-{%- set user = salt['pillar.get']('bitcurator_user', 'bcadmin') -%}
-{%- set all_users = salt['user.list_users']() -%}
-{%- if user in all_users -%}
+{% set user = salt['pillar.get']('bitcurator_user') %}
+{% set all_users = salt['user.list_users']() %}
+{% if user in all_users %}
 bitcurator-user-{{ user }}:
   user.present:
     - name: {{ user }}
     - home: /home/{{ user }}
-{%- else %}
+{% else %}
 bitcurator-user-{{ user }}:
   user.present:
     - name: {{ user }}
@@ -14,5 +14,5 @@ bitcurator-user-{{ user }}:
     - home: /home/{{ user }}
     - password: bcadmin
     - gid_from_name: True
-{%- endif %}
+{% endif %}
 

@@ -8,6 +8,7 @@ include:
   - bitcurator.env.mediasymlink
   - bitcurator.env.mountwinalias
   - bitcurator.env.setnoclobber
+  - bitcurator.env.sudoers
   - bitcurator.env.floppyconfig
   - bitcurator.env.ficlam
   - bitcurator.env.usr
@@ -27,6 +28,7 @@ bitcurator-env:
       - sls: bitcurator.env.mediasymlink
       - sls: bitcurator.env.mountwinalias
       - sls: bitcurator.env.setnoclobber
+      - sls: bitcurator.env.sudoers
       - sls: bitcurator.env.floppyconfig
       - sls: bitcurator.env.ficlam
       - sls: bitcurator.env.usr
