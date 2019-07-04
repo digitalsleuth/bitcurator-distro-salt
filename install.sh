@@ -39,3 +39,5 @@ git checkout ENHANCEMENT-install
 
 echoinfo " Installing BitCurator tools and scripts..."
 salt-call -l info --local state.sls bitcurator.primary pillar='{"bitcurator_version": "dev", "bitcurator_user": '$USERID'}'
+
+
