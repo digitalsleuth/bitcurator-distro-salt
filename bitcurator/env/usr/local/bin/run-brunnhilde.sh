@@ -13,6 +13,6 @@ set arg1 [lindex $argv 0]
 spawn -noecho bash
 expect "$ "
 send "cd ~/\n"
-send "brunnhilde.py\n"
+send "brunnhilde.py -h\n"
 interact
 exit
