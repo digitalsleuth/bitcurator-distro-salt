@@ -28,10 +28,10 @@ A simple bash installer script is provided in our bitcurator-distro-installer re
 ```shell
 git clone https://github.com/bitcurator/bitcurator-distro-installer
 cd bitcurator-distro-installer
-sudo ./install.sh
+sudo ./install.sh -u username
 ```
 
-You will be prompted for a username corresponding to an existing user. Type the username and hit enter. Note! The installation may take an hour or longer to complete.
+Replace **username** with the name of an existing user. Note! The installation may take an hour or longer to complete.
 
 ## Manual install
 
