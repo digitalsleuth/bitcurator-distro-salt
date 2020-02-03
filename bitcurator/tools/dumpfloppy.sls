@@ -4,6 +4,7 @@ dumpfloppy:
         cd /tmp
         git clone http://offog.org/git/dumpfloppy.git
         cd dumpfloppy
+        echo "The Git HEAD is `git rev-parse HEAD`." >> $HOME/bitcurator-install.log 2>&1
         aclocal --force && autoconf -f && automake --add-missing && ./configure
         make
         make install

@@ -2,6 +2,7 @@ afflibv3:
   cmd.run:
     - name: |
         git clone --recursive https://github.com/sshock/AFFLIBv3 /tmp/AFFLIBv3
+        echo "The Git HEAD is `git rev-parse HEAD`." >> $HOME/bitcurator-install.log 2>&1
         cd /tmp/AFFLIBv3
         ./bootstrap.sh
         ./configure

@@ -3,6 +3,7 @@ bulkextractor:
     - name: |
         git clone --recursive https://github.com/simsong/bulk_extractor /tmp/bulk_extractor
         cd /tmp/bulk_extractor
+        echo "The Git HEAD is `git rev-parse HEAD`." >> $HOME/bitcurator-install.log 2>&1
         chmod 755 bootstrap.sh
         ./bootstrap.sh
         ./configure --enable-lightgrep --disable-hashdb

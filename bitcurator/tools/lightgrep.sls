@@ -3,6 +3,7 @@ lightgrep:
     - name: |
         git clone --recursive git://github.com/strozfriedberg/liblightgrep.git /tmp/liblightgrep
         cd /tmp/liblightgrep
+        echo "The Git HEAD is `git rev-parse HEAD`." >> $HOME/bitcurator-install.log 2>&1
         autoreconf -fi
         ./configure --with-boost-libdir=/usr/lib/x86_64-linux-gnu
         make -j4 -s
