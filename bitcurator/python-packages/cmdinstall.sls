@@ -13,6 +13,7 @@ cmdinstall:
         pip3 install matplotlib
         pip3 install opf-fido
         pip3 install pefile
+        pip3 install PyICU
         pip3 install python-dateutil
         pip3 install python-evtx
         pip3 install pythong-registry
