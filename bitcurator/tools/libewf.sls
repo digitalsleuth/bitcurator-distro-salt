@@ -5,7 +5,7 @@ libewf:
         cd /tmp
         tar zxf libewf-20140608.tar.gz
         cd libewf-20140608
-        ./configure --enable-python --enable-v1-api
+        ./configure --enable-v1-api
         make -s
         make install
         ldconfig
