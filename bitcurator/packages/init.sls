@@ -96,7 +96,6 @@ include:
   - bitcurator.packages.md5deep
   - bitcurator.packages.mediainfo
   - bitcurator.packages.mencoder
-  - bitcurator.packages.mercurial-common
   - bitcurator.packages.mokutil
   - bitcurator.packages.mpg321
   - bitcurator.packages.mplayer
@@ -240,7 +239,6 @@ bitcurator-packages:
       - sls: bitcurator.packages.md5deep
       - sls: bitcurator.packages.mediainfo
       - sls: bitcurator.packages.mencoder
-      - sls: bitcurator.packages.mercurial-common
       - sls: bitcurator.packages.mokutil
       - sls: bitcurator.packages.mpg321
       - sls: bitcurator.packages.mplayer
