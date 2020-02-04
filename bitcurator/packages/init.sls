@@ -61,7 +61,6 @@ include:
   - bitcurator.packages.libcppunit-dev
   - bitcurator.packages.libcrypto++6
   - bitcurator.packages.libcurl4-openssl-dev
-  - bitcurator.packages.libdebian-installer4
   - bitcurator.packages.libdvdread4
   - bitcurator.packages.libevent-dev
   - bitcurator.packages.libexif-dev
@@ -209,7 +208,6 @@ bitcurator-packages:
       - sls: bitcurator.packages.libcppunit-dev
       - sls: bitcurator.packages.libcrypto++6
       - sls: bitcurator.packages.libcurl4-openssl-dev
-      - sls: bitcurator.packages.libdebian-installer4
       - sls: bitcurator.packages.libdvdread4
       - sls: bitcurator.packages.libevent-dev
       - sls: bitcurator.packages.libexif-dev
