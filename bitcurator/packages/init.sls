@@ -19,7 +19,6 @@ include:
   - bitcurator.packages.dialog
   - bitcurator.packages.discover
   - bitcurator.packages.disktype
-  - bitcurator.packages.easytag
   - bitcurator.packages.equivs
   - bitcurator.packages.expat
   - bitcurator.packages.expect
@@ -168,7 +167,6 @@ bitcurator-packages:
       - sls: bitcurator.packages.dialog
       - sls: bitcurator.packages.discover
       - sls: bitcurator.packages.disktype
-      - sls: bitcurator.packages.easytag
       - sls: bitcurator.packages.equivs
       - sls: bitcurator.packages.expat
       - sls: bitcurator.packages.expect
