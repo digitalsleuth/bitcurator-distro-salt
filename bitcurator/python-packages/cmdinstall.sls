@@ -20,6 +20,7 @@ cmdinstall:
         pip3 install setuptools
         pip3 install six
         pip3 install unicodecsv
+        pip3 install openpyxl
         pip3 install wheel
     - cwd: /tmp
     - shell: /bin/bash
