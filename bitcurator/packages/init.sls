@@ -8,7 +8,6 @@ include:
   - bitcurator.packages.bless
   - bitcurator.packages.brasero
   - bitcurator.packages.cdrdao
-  - bitcurator.packages.cifs-utils
   - bitcurator.packages.clamav
   - bitcurator.packages.clamav-daemon
   - bitcurator.packages.clamtk
@@ -20,7 +19,6 @@ include:
   - bitcurator.packages.dialog
   - bitcurator.packages.discover
   - bitcurator.packages.disktype
-  - bitcurator.packages.dkms
   - bitcurator.packages.easytag
   - bitcurator.packages.equivs
   - bitcurator.packages.expat
@@ -159,7 +157,6 @@ bitcurator-packages:
       - sls: bitcurator.packages.bless
       - sls: bitcurator.packages.brasero
       - sls: bitcurator.packages.cdrdao
-      - sls: bitcurator.packages.cifs-utils
       - sls: bitcurator.packages.clamav
       - sls: bitcurator.packages.clamav-daemon
       - sls: bitcurator.packages.clamtk
@@ -171,7 +168,6 @@ bitcurator-packages:
       - sls: bitcurator.packages.dialog
       - sls: bitcurator.packages.discover
       - sls: bitcurator.packages.disktype
-      - sls: bitcurator.packages.dkms
       - sls: bitcurator.packages.easytag
       - sls: bitcurator.packages.equivs
       - sls: bitcurator.packages.expat
