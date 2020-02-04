@@ -7,7 +7,6 @@ include:
   - bitcurator.packages.bison
   - bitcurator.packages.bless
   - bitcurator.packages.brasero
-  - bitcurator.packages.casper
   - bitcurator.packages.cdrdao
   - bitcurator.packages.cifs-utils
   - bitcurator.packages.clamav
@@ -159,7 +158,6 @@ bitcurator-packages:
       - sls: bitcurator.packages.bison
       - sls: bitcurator.packages.bless
       - sls: bitcurator.packages.brasero
-      - sls: bitcurator.packages.casper
       - sls: bitcurator.packages.cdrdao
       - sls: bitcurator.packages.cifs-utils
       - sls: bitcurator.packages.clamav
