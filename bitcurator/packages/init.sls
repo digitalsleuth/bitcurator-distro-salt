@@ -118,7 +118,6 @@ include:
   - bitcurator.packages.python3-tk
   - bitcurator.packages.python3-virtualenv
   - bitcurator.packages.pst-utils
-  - bitcurator.packages.samba
   - bitcurator.packages.sharutils
   - bitcurator.packages.siegfried
   - bitcurator.packages.smartmontools
@@ -127,7 +126,6 @@ include:
   - bitcurator.packages.subversion
   - bitcurator.packages.swig
   - bitcurator.packages.syslinux-utils
-  - bitcurator.packages.system-config-samba
   - bitcurator.packages.testdisk
   - bitcurator.packages.tree
   - bitcurator.packages.udisks2
@@ -137,7 +135,6 @@ include:
   - bitcurator.packages.uuid-dev
   - bitcurator.packages.vim
   - bitcurator.packages.vlc
-  - bitcurator.packages.winbind
   - bitcurator.packages.xmount
   - bitcurator.packages.xorriso
   - bitcurator.packages.yad
@@ -265,7 +262,6 @@ bitcurator-packages:
       - sls: bitcurator.packages.python3-tk
       - sls: bitcurator.packages.python3-virtualenv
       - sls: bitcurator.packages.pst-utils
-      - sls: bitcurator.packages.samba
       - sls: bitcurator.packages.sharutils
       - sls: bitcurator.packages.siegfried
       - sls: bitcurator.packages.smartmontools
@@ -274,7 +270,6 @@ bitcurator-packages:
       - sls: bitcurator.packages.subversion
       - sls: bitcurator.packages.swig
       - sls: bitcurator.packages.syslinux-utils
-      - sls: bitcurator.packages.system-config-samba
       - sls: bitcurator.packages.testdisk
       - sls: bitcurator.packages.tree
       - sls: bitcurator.packages.udisks2
@@ -284,7 +279,6 @@ bitcurator-packages:
       - sls: bitcurator.packages.uuid-dev
       - sls: bitcurator.packages.vim
       - sls: bitcurator.packages.vlc
-      - sls: bitcurator.packages.winbind
       - sls: bitcurator.packages.xmount
       - sls: bitcurator.packages.xorriso
       - sls: bitcurator.packages.yad
