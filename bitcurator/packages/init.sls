@@ -25,7 +25,6 @@ include:
   - bitcurator.packages.fdutils
   - bitcurator.packages.ffmpeg
   - bitcurator.packages.flex
-  - bitcurator.packages.fslint
   - bitcurator.packages.g++
   - bitcurator.packages.gadmin-rsync
   - bitcurator.packages.gawk
@@ -168,7 +167,6 @@ bitcurator-packages:
       - sls: bitcurator.packages.fdutils
       - sls: bitcurator.packages.ffmpeg
       - sls: bitcurator.packages.flex
-      - sls: bitcurator.packages.fslint
       - sls: bitcurator.packages.g++
       - sls: bitcurator.packages.gadmin-rsync
       - sls: bitcurator.packages.gawk
