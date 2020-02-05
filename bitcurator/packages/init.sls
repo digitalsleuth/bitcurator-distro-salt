@@ -31,7 +31,6 @@ include:
   - bitcurator.packages.gddrescue
   - bitcurator.packages.ghex
   - bitcurator.packages.git
-  - bitcurator.packages.git-svn
   - bitcurator.packages.gnome-sushi
   - bitcurator.packages.gnome-system-tools
   - bitcurator.packages.grsync
@@ -173,7 +172,6 @@ bitcurator-packages:
       - sls: bitcurator.packages.gddrescue
       - sls: bitcurator.packages.ghex
       - sls: bitcurator.packages.git
-      - sls: bitcurator.packages.git-svn
       - sls: bitcurator.packages.gnome-sushi
       - sls: bitcurator.packages.gnome-system-tools
       - sls: bitcurator.packages.grsync
