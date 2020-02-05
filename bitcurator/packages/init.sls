@@ -117,7 +117,6 @@ include:
   - bitcurator.packages.smartmontools
   - bitcurator.packages.squashfs-tools
   - bitcurator.packages.ssdeep
-  - bitcurator.packages.subversion
   - bitcurator.packages.swig
   - bitcurator.packages.syslinux-utils
   - bitcurator.packages.testdisk
@@ -255,7 +254,6 @@ bitcurator-packages:
       - sls: bitcurator.packages.smartmontools
       - sls: bitcurator.packages.squashfs-tools
       - sls: bitcurator.packages.ssdeep
-      - sls: bitcurator.packages.subversion
       - sls: bitcurator.packages.swig
       - sls: bitcurator.packages.syslinux-utils
       - sls: bitcurator.packages.testdisk
