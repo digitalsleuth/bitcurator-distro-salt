@@ -24,12 +24,10 @@ launcher-trust:
         gio set /home/{{ user }}/Desktop/Forensics\ and\ Reporting/brunnhilde.desktop "metadata::trusted" yes
         gio set /home/{{ user }}/Desktop/Forensics\ and\ Reporting/disktype.desktop "metadata::trusted" yes
         gio set /home/{{ user }}/Desktop/Forensics\ and\ Reporting/fiwalk.desktop "metadata::trusted" yes
-        gio set /home/{{ user }}/Desktop/Forensics\ and\ Reporting/fslint.desktop "metadata::trusted" yes
         gio set /home/{{ user }}/Desktop/Forensics\ and\ Reporting/hashdb.desktop "metadata::trusted" yes
         gio set /home/{{ user }}/Desktop/Forensics\ and\ Reporting/md5deep.desktop "metadata::trusted" yes
         gio set /home/{{ user }}/Desktop/Forensics\ and\ Reporting/nsrllookup.desktop "metadata::trusted" yes
         gio set /home/{{ user }}/Desktop/Forensics\ and\ Reporting/photorec.desktop "metadata::trusted" yes
-        gio set /home/{{ user }}/Desktop/Forensics\ and\ Reporting/pyexiftoolgui.desktop "metadata::trusted" yes
         gio set /home/{{ user }}/Desktop/Forensics\ and\ Reporting/regripper.desktop "metadata::trusted" yes
         gio set /home/{{ user }}/Desktop/Forensics\ and\ Reporting/sdhash.desktop "metadata::trusted" yes
         gio set /home/{{ user }}/Desktop/Forensics\ and\ Reporting/ssdeep.desktop "metadata::trusted" yes

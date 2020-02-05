@@ -12,8 +12,6 @@ include:
   - bitcurator.tools.dumpfloppy
   - bitcurator.tools.bagitpython
   - bitcurator.tools.sdhash
-  - bitcurator.tools.pyexiftoolgui
-  - bitcurator.tools.openpyxl
   - bitcurator.tools.regripper
   - bitcurator.tools.nsrllookup
 
@@ -34,7 +32,5 @@ bitcurator-tools:
       - sls: bitcurator.tools.dumpfloppy
       - sls: bitcurator.tools.bagitpython
       - sls: bitcurator.tools.sdhash
-      - sls: bitcurator.tools.pyexiftoolgui
-      - sls: bitcurator.tools.openpyxl
       - sls: bitcurator.tools.regripper
       - sls: bitcurator.tools.nsrllookup
