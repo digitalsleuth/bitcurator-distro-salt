@@ -43,8 +43,6 @@ include:
   - bitcurator.packages.hfsutils
   - bitcurator.packages.hfsutils-tcltk
   - bitcurator.packages.icedax
-  - bitcurator.packages.id3tool
-  - bitcurator.packages.lame
   - bitcurator.packages.libappindicator1
   - bitcurator.packages.libappindicator3-dev
   - bitcurator.packages.libarchive-dev
@@ -95,7 +93,6 @@ include:
   - bitcurator.packages.mediainfo
   - bitcurator.packages.mencoder
   - bitcurator.packages.mokutil
-  - bitcurator.packages.mpg321
   - bitcurator.packages.mplayer
   - bitcurator.packages.mysql-client
   - bitcurator.packages.nautilus-script-audio-convert
@@ -184,8 +181,6 @@ bitcurator-packages:
       - sls: bitcurator.packages.hfsutils
       - sls: bitcurator.packages.hfsutils-tcltk
       - sls: bitcurator.packages.icedax
-      - sls: bitcurator.packages.id3tool
-      - sls: bitcurator.packages.lame
       - sls: bitcurator.packages.libappindicator1
       - sls: bitcurator.packages.libappindicator3-dev
       - sls: bitcurator.packages.libarchive-dev
@@ -236,7 +231,6 @@ bitcurator-packages:
       - sls: bitcurator.packages.mediainfo
       - sls: bitcurator.packages.mencoder
       - sls: bitcurator.packages.mokutil
-      - sls: bitcurator.packages.mpg321
       - sls: bitcurator.packages.mplayer
       - sls: bitcurator.packages.mysql-client
       - sls: bitcurator.packages.nautilus-script-audio-convert
