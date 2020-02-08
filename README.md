@@ -23,7 +23,7 @@ sudo apt install git
 
 ## Simple install
 
-A simple bash installer script is provided in our bitcurator-distro-installer repository which automates most of the install process. You can install all of the BitCurator tools and desktop support files for any user with this dedicated installation script. Simply run the following in a terminal:
+A simple bash installer script that fully automates the creation of the BitCurator environment is provided by our [bitcurator-distro-installer](https://github.com/bitcurator/bitcurator-distro-installer) repository. Simply run the following in a terminal:
 
 ```shell
 git clone https://github.com/bitcurator/bitcurator-distro-installer
