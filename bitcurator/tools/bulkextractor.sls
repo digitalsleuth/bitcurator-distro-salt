@@ -3,7 +3,8 @@ bulkextractor:
     - name: |
         git clone --recursive https://github.com/simsong/bulk_extractor /tmp/bulk_extractor
         cd /tmp/bulk_extractor
-        echo "Cloned bulk_extractor" >> /var/log/bitcurator-install.log 2>&1
+        git checkout 674867b3416e210b76ca048242f04d96a4e2bbaf >> /var/log/bitcurator-install.log 2>&1
+        echo "Cloned bulk_extractor and checked out a pre-1.6.0 commit" >> /var/log/bitcurator-install.log 2>&1
         echo "The Git HEAD is `git rev-parse HEAD`." >> /var/log/bitcurator-install.log 2>&1
         chmod 755 bootstrap.sh
         ./bootstrap.sh >> /var/log/bitcurator-install.log 2>&1
