@@ -3,6 +3,7 @@ cmdinstall:
     - name: |
         pip3 install analyzemft
         pip3 install argparse
+        pip3 install bagit
         pip3 install brunnhilde
         pip3 install configobj
         pip3 install construct

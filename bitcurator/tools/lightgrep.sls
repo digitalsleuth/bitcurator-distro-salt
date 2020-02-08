@@ -3,11 +3,12 @@ lightgrep:
     - name: |
         git clone --recursive git://github.com/strozfriedberg/liblightgrep.git /tmp/liblightgrep
         cd /tmp/liblightgrep
-        echo "The Git HEAD is `git rev-parse HEAD`." >> $HOME/bitcurator-install.log 2>&1
-        autoreconf -fi
-        ./configure --with-boost-libdir=/usr/lib/x86_64-linux-gnu
-        make -j4 -s
-        make install
+        echo "Cloned lightgrep" >> /var/log/bitcurator-install.log 2>&1
+        echo "The Git HEAD is `git rev-parse HEAD`." >> /var/log/bitcurator-install.log 2>&1
+        autoreconf -fi >> /var/log/bitcurator-install.log 2>&1
+        ./configure --with-boost-libdir=/usr/lib/x86_64-linux-gnu >> /var/log/bitcurator-install.log 2>&1
+        make -j4 >> /var/log/bitcurator-install.log 2>&1
+        make install >> /var/log/bitcurator-install.log 2>&1
         cp pylightgrep/lightgrep.py /usr/local/bin
         chmod 755 /usr/local/bin/lightgrep.py
         cd /tmp
