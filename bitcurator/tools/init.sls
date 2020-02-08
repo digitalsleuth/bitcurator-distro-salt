@@ -10,7 +10,6 @@ include:
   - bitcurator.tools.bulkextractor
   - bitcurator.tools.bctools
   - bitcurator.tools.dumpfloppy
-  - bitcurator.tools.bagitpython
   - bitcurator.tools.sdhash
   - bitcurator.tools.regripper
   - bitcurator.tools.nsrllookup
@@ -30,7 +29,6 @@ bitcurator-tools:
       - sls: bitcurator.tools.bulkextractor
       - sls: bitcurator.tools.bctools
       - sls: bitcurator.tools.dumpfloppy
-      - sls: bitcurator.tools.bagitpython
       - sls: bitcurator.tools.sdhash
       - sls: bitcurator.tools.regripper
       - sls: bitcurator.tools.nsrllookup
