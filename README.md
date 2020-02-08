@@ -66,7 +66,7 @@ The **bitcurator** directory contains all support files and salt states in a num
 - **externals**: Source packages that are either not deb packaged or for which a legacy version is required
 - **mounter**: Mount policy tools
 - **packages**: all deb packages (to be installed with apt-get)
-- **python-packages**: all Python 3 packages (to be installed with pip)
+- **python-packages**: all Python 3 packages (to be installed with pip3)
 - **repos**: additional repositories that must be enabled
 - **tools**: tools that must be installed from source
 
