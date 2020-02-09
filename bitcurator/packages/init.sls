@@ -131,6 +131,7 @@ include:
   - bitcurator.packages.xmount
   - bitcurator.packages.xorriso
   - bitcurator.packages.yad
+  - bitcurator.packages.zerofree
 
 bitcurator-packages:
   test.nop:
@@ -268,3 +269,4 @@ bitcurator-packages:
       - sls: bitcurator.packages.xmount
       - sls: bitcurator.packages.xorriso
       - sls: bitcurator.packages.yad
+      - sls: bitcurator.packages.zerofree
