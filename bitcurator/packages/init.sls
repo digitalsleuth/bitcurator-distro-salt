@@ -124,7 +124,6 @@ include:
   - bitcurator.packages.udisks2
   - bitcurator.packages.unixodbc
   - bitcurator.packages.unixodbc-dev
-  - bitcurator.packages.user-setup
   - bitcurator.packages.uuid-dev
   - bitcurator.packages.vim
   - bitcurator.packages.vlc
@@ -262,7 +261,6 @@ bitcurator-packages:
       - sls: bitcurator.packages.udisks2
       - sls: bitcurator.packages.unixodbc
       - sls: bitcurator.packages.unixodbc-dev
-      - sls: bitcurator.packages.user-setup
       - sls: bitcurator.packages.uuid-dev
       - sls: bitcurator.packages.vim
       - sls: bitcurator.packages.vlc
