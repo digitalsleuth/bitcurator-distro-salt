@@ -6,6 +6,9 @@ sleuthkit:
         echo "Got sleuthkit 4.8.0 with wget" >> /var/log/bitcurator-install.log 2>&1
         rm -rf sleuthkit && tar zxf sleuthkit-4.8.0.tar.gz && mv sleuthkit-4.8.0 sleuthkit
         cd sleuthkit
+        cp /srv/salt/bitcurator/externals/ficlam.sh tools/fiwalk/plugins
+        cp /srv/salt/bitcurator/externals/clamconfig.txt tools/fiwalk/plugins
+        cp /srv/salt/bitcurator/externals/ficonfig.txt tools/fiwalk/plugins
         ./configure >> /var/log/bitcurator-install.log 2>&1
         make >> /var/log/bitcurator-install.log 2>&1
         make install >> /var/log/bitcurator-install.log 2>&1
