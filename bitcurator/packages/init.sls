@@ -37,6 +37,7 @@ include:
   - bitcurator.packages.gtkhash
   - bitcurator.packages.guymager-beta
   - bitcurator.packages.hardinfo
+  - bitcurator.packages.hashrat
   - bitcurator.packages.hdparm
   - bitcurator.packages.hfsplus
   - bitcurator.packages.hfsprogs
@@ -174,6 +175,7 @@ bitcurator-packages:
       - sls: bitcurator.packages.gtkhash
       - sls: bitcurator.packages.guymager-beta
       - sls: bitcurator.packages.hardinfo
+      - sls: bitcurator.packages.hashrat
       - sls: bitcurator.packages.hdparm
       - sls: bitcurator.packages.hfsplus
       - sls: bitcurator.packages.hfsprogs

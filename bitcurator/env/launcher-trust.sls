@@ -12,6 +12,7 @@ launcher-trust:
         gio set /home/{{ user }}/Desktop/Additional\ Tools/ghex.desktop "metadata::trusted" yes
         gio set /home/{{ user }}/Desktop/Additional\ Tools/gtkhash\:gtkhash.desktop "metadata::trusted" yes
         gio set /home/{{ user }}/Desktop/Additional\ Tools/hardinfo.desktop "metadata::trusted" yes
+        gio set /home/{{ user }}/Desktop/Additional\ Tools/hashrat.desktop "metadata::trusted" yes
         gio set /home/{{ user }}/Desktop/Additional\ Tools/hfs.desktop "metadata::trusted" yes
         gio set /home/{{ user }}/Desktop/Additional\ Tools/identfile.desktop "metadata::trusted" yes
         gio set /home/{{ user }}/Desktop/Additional\ Tools/nwipe.desktop "metadata::trusted" yes
