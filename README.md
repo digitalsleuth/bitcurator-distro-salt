@@ -4,16 +4,15 @@
 
 [![GitHub issues](https://img.shields.io/github/issues/bitcurator/bitcurator-distro-salt.svg)](https://github.com/bitcurator/bitcurator-distro-salt/issues)
 [![GitHub forks](https://img.shields.io/github/forks/bitcurator/bitcurator-distro-salt.svg)](https://github.com/bitcurator/bitcurator-distro-salt/network)
-[![Build Status](https://travis-ci.org/BitCurator/bitcurator-distro-salt.svg?branch=master)](https://travis-ci.org/BitCurator/bitcurator-distro-salt)
 [![Twitter Follow](https://img.shields.io/twitter/follow/bitcurator.svg?style=social&label=Follow)](https://twitter.com/bitcurator)
 
 This repo includes relevant salt states and supporting files to build a stack of data analysis, forensics, and security tools using Ubuntu and SaltStack. This build stack is intended to support setup of the BitCurator imaging and disk analysis environment.
 
-Visit https://github.com/BitCurator/bitcurator-distro/wiki/Releases to download the latest release built using this repo!
+Visit https://github.com/BitCurator/bitcurator-distro/wiki/Releases to download pre-built VMs for specific releases.
 
 ## Pre-Installation Setup
 
-Create a fresh Ubuntu 18.04LTS environment in a VM or on a dedicated host. To replicate the official release, use the hostname "bitcurator" and create a user named "bcadmin". However, you may use any hostname and username you wish in the following steps. Log in and execute the following in a terminal:
+Install Ubuntu 18.04LTS environment in a VM or on a dedicated host (see https://ubuntu.com/tutorials/tutorial-install-ubuntu-desktop for help with this). Our pre-built VMs use the hostname "bitcurator" and the username "bcadmin", but any hostname and username are ok. Log in, ensure you are connected to a network, and execute the following in a terminal:
 
 ```shell
 sudo apt-get update
@@ -23,7 +22,7 @@ sudo apt install git
 
 ## Simple install
 
-A simple bash installer script that fully automates the creation of the BitCurator environment is provided by our [bitcurator-distro-installer](https://github.com/bitcurator/bitcurator-distro-installer) repository. Simply run the following in a terminal:
+A simple bash installer script that fully automates the creation of the BitCurator environment is provided by our [bitcurator-distro-installer](https://github.com/bitcurator/bitcurator-distro-installer) repository. Run the following in a terminal:
 
 ```shell
 git clone https://github.com/bitcurator/bitcurator-distro-installer
@@ -31,7 +30,7 @@ cd bitcurator-distro-installer
 sudo ./install.sh -u username
 ```
 
-Replace **username** with the name of an existing user. Note! The installation may take an hour or longer to complete.
+Replace **username** with the name of an existing user. The installation may take an hour or longer to complete.
 
 ## Manual install
 
@@ -51,7 +50,7 @@ sudo git clone https://github.com/bitcurator/bitcurator-distro-salt /srv/salt
 sudo salt-call -l info --local state.sls bitcurator.primary pillar='{"bitcurator_version": "dev", "bitcurator_user": "TYPE_YOUR_USERNAME_HERE"}'
 ```
 
-Reboot the VM or host. The environment should now be a fully configured build of BitCurator.
+Reboot the VM or host and log in. The OS should now be configured to operate as a BitCurator environment.
 
 ## What's in this repository
 
