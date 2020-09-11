@@ -2,9 +2,9 @@ sleuthkit:
   cmd.run:
     - name: |
         cd /usr/share
-        wget -q https://github.com/sleuthkit/sleuthkit/releases/download/sleuthkit-4.8.0/sleuthkit-4.8.0.tar.gz
-        echo "Got sleuthkit 4.8.0 with wget" >> /var/log/bitcurator-install.log 2>&1
-        rm -rf sleuthkit && tar zxf sleuthkit-4.8.0.tar.gz && mv sleuthkit-4.8.0 sleuthkit
+        wget -q https://github.com/sleuthkit/sleuthkit/releases/download/sleuthkit-4.10.0/sleuthkit-4.10.0.tar.gz
+        echo "Got sleuthkit 4.10.0 with wget" >> /var/log/bitcurator-install.log 2>&1
+        rm -rf sleuthkit && tar zxf sleuthkit-4.10.0.tar.gz && mv sleuthkit-4.10.0 sleuthkit
         cd sleuthkit
         cp /srv/salt/bitcurator/externals/ficlam.sh tools/fiwalk/plugins
         cp /srv/salt/bitcurator/externals/clamconfig.txt tools/fiwalk/plugins
@@ -13,7 +13,7 @@ sleuthkit:
         make >> /var/log/bitcurator-install.log 2>&1
         make install >> /var/log/bitcurator-install.log 2>&1
         cd ../
-        rm sleuthkit-4.8.0.tar.gz
+        rm sleuthkit-4.10.0.tar.gz
         ldconfig
     - cwd: /tmp
     - shell: /bin/bash
