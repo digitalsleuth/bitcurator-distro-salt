@@ -18,6 +18,7 @@ cmdinstall:
         pip3 install python-dateutil
         pip3 install python-evtx
         pip3 install pythong-registry
+	pip3 install pytks3
         pip3 install setuptools
         pip3 install six
         pip3 install unicodecsv
