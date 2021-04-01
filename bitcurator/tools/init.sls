@@ -4,7 +4,6 @@ include:
   - bitcurator.tools.libewf
   - bitcurator.tools.afflibv3
   - bitcurator.tools.sleuthkit
-  - bitcurator.tools.pytsk
   - bitcurator.tools.hfsexplorer
   - bitcurator.tools.lightgrep
   - bitcurator.tools.bulkextractor
@@ -23,7 +22,6 @@ bitcurator-tools:
       - sls: bitcurator.tools.libewf
       - sls: bitcurator.tools.afflibv3
       - sls: bitcurator.tools.sleuthkit
-      - sls: bitcurator.tools.pytsk
       - sls: bitcurator.tools.hfsexplorer
       - sls: bitcurator.tools.lightgrep
       - sls: bitcurator.tools.bulkextractor
