@@ -47,6 +47,7 @@ Next, clone this repository and run the required salt-call:
 
 ```shell
 sudo git clone https://github.com/bitcurator/bitcurator-distro-salt /srv/salt
+cd /srv/salt
 sudo salt-call -l info --local state.sls bitcurator.primary pillar='{"bitcurator_version": "dev", "bitcurator_user": "TYPE_YOUR_USERNAME_HERE"}'
 ```
 
