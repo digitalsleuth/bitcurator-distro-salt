@@ -1,0 +1,7 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Type=Application
+Name=Brunnhilde GUI
+Exec=/usr/share/brunnhilde-gui/launch
+Icon=/usr/share/brunnhilde-gui/icon.png

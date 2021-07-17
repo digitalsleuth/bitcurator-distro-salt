@@ -1,6 +1,7 @@
 cmdinstall:
   cmd.run:
     - name: |
+        pip3 install --upgrade pip
         pip3 install analyzemft
         pip3 install argparse
         pip3 install bagit
@@ -17,7 +18,8 @@ cmdinstall:
         pip3 install PyICU
         pip3 install python-dateutil
         pip3 install python-evtx
-        pip3 install pythong-registry
+        pip3 install python-registry
+        pip3 install pyqt5
         pip3 install pytsk3
         pip3 install setuptools
         pip3 install six
