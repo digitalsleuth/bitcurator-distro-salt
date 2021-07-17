@@ -1,7 +1,7 @@
 bulkextractor:
   cmd.run:
     - name: |
-        git clone --recursive https://github.com/simsong/bulk_extractor /tmp/bulk_extractor
+        git clone https://github.com/simsong/bulk_extractor /tmp/bulk_extractor
         cd /tmp/bulk_extractor
         git checkout 674867b3416e210b76ca048242f04d96a4e2bbaf >> /var/log/bitcurator-install.log 2>&1
         echo "Cloned bulk_extractor and checked out a pre-1.6.0 commit" >> /var/log/bitcurator-install.log 2>&1
