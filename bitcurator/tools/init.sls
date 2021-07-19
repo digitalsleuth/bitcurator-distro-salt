@@ -6,6 +6,7 @@ include:
   - bitcurator.tools.sleuthkit
   - bitcurator.tools.hfsexplorer
   - bitcurator.tools.lightgrep
+  - bitcurator.tools.brunnhilde-gui
   - bitcurator.tools.bulkextractor
   - bitcurator.tools.bctools
   - bitcurator.tools.dumpfloppy
@@ -24,6 +25,7 @@ bitcurator-tools:
       - sls: bitcurator.tools.sleuthkit
       - sls: bitcurator.tools.hfsexplorer
       - sls: bitcurator.tools.lightgrep
+      - sls: bitcurator.tools.brunnhilde-gui
       - sls: bitcurator.tools.bulkextractor
       - sls: bitcurator.tools.bctools
       - sls: bitcurator.tools.dumpfloppy
