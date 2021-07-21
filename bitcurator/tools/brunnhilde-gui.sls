@@ -11,7 +11,7 @@ brunnhilde-gui:
         mv icon.png /usr/share/brunnhilde-gui
         mv launch /usr/share/brunnhilde-gui
         mv main.py /usr/share/brunnhilde-gui
-        chmod u+x /usr/share/brunnhilde-gui/launch
+        chmod 755 /usr/share/brunnhilde-gui/launch
         cd /tmp
         rm -rf brunnhilde-gui
     - cwd: /tmp
