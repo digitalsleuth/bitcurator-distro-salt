@@ -4,7 +4,7 @@ include:
   - bitcurator.env.launcher-trust
   - bitcurator.env.ltdesktop
   - bitcurator.env.etc
-  - bitcurator.env.guymager 
+  - bitcurator.env.guymager-config 
   - bitcurator.env.lib
   - bitcurator.env.mediasymlink
   - bitcurator.env.mountwinalias
@@ -25,7 +25,7 @@ bitcurator-env:
       - sls: bitcurator.env.launcher-trust
       - sls: bitcurator.env.ltdesktop
       - sls: bitcurator.env.etc
-      - sls: bitcurator.env.guymager
+      - sls: bitcurator.env.guymager-config
       - sls: bitcurator.env.lib
       - sls: bitcurator.env.mediasymlink
       - sls: bitcurator.env.mountwinalias
