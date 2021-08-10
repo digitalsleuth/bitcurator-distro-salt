@@ -36,7 +36,7 @@ include:
   - bitcurator.packages.gnome-system-tools
   - bitcurator.packages.grsync
   - bitcurator.packages.gtkhash
-  - bitcurator.packages.guymager-beta
+  - bitcurator.packages.guymager
   - bitcurator.packages.hardinfo
   - bitcurator.packages.hashrat
   - bitcurator.packages.hdparm
@@ -175,7 +175,7 @@ bitcurator-packages:
       - sls: bitcurator.packages.gnome-system-tools
       - sls: bitcurator.packages.grsync
       - sls: bitcurator.packages.gtkhash
-      - sls: bitcurator.packages.guymager-beta
+      - sls: bitcurator.packages.guymager
       - sls: bitcurator.packages.hardinfo
       - sls: bitcurator.packages.hashrat
       - sls: bitcurator.packages.hdparm
