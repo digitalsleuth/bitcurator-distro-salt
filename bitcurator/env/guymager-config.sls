@@ -1,4 +1,4 @@
-guymager:
+guymager-config:
   cmd.run:
     - name: |
         cp /srv/salt/bitcurator/env/guymager-config/guymager_en-CH.qm /usr/share/guymager/guymager_en-CH.qm
