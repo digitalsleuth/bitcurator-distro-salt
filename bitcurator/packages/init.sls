@@ -66,6 +66,7 @@ include:
   - bitcurator.packages.libfuse-dev
   - bitcurator.packages.libicu-dev
   - bitcurator.packages.libimage-exiftool-perl
+  - bitcurator.packages.libjpeg-dev
   - bitcurator.packages.libmad0
   - bitcurator.packages.libmagic-dev
   - bitcurator.packages.libmysqlclient-dev
@@ -205,6 +206,7 @@ bitcurator-packages:
       - sls: bitcurator.packages.libfuse-dev
       - sls: bitcurator.packages.libicu-dev
       - sls: bitcurator.packages.libimage-exiftool-perl
+      - sls: bitcurator.packages.libjpeg-dev
       - sls: bitcurator.packages.libmad0
       - sls: bitcurator.packages.libmagic-dev
       - sls: bitcurator.packages.libmysqlclient-dev
