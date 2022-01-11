@@ -1,7 +1,7 @@
 lightgrep:
   cmd.run:
     - name: |
-        git clone --recursive git://github.com/strozfriedberg/liblightgrep.git /tmp/liblightgrep
+        git clone --recursive https://github.com/strozfriedberg/liblightgrep.git /tmp/liblightgrep
         cd /tmp/liblightgrep
         echo "Cloned lightgrep" >> /var/log/bitcurator-install.log 2>&1
         echo "The Git HEAD is `git rev-parse HEAD`." >> /var/log/bitcurator-install.log 2>&1
