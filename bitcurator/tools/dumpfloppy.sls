@@ -2,7 +2,7 @@ dumpfloppy:
   cmd.run:
     - name: |
         cd /tmp
-        git clone http://offog.org/git/dumpfloppy.git
+        git clone https://offog.org/git/dumpfloppy.git
         cd dumpfloppy
         echo "Cloned dumpfloppy" >> /var/log/bitcurator-install.log 2>&1
         echo "The Git HEAD is `git rev-parse HEAD`." >> /var/log/bitcurator-install.log 2>&1
