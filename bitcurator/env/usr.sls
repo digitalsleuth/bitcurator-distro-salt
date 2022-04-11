@@ -4,4 +4,5 @@
     - user: root
     - group: root
     - makedirs: True
-    - file_mode: keep
+    - file_mode: 755
+    - dir_mode: 755

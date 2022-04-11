@@ -1,17 +1,41 @@
-nsrllookup:
+include:
+  - bitcurator.packages.build-essential
+  - bitcurator.packages.cmake
+  - bitcurator.packages.libboost-dev
+
+nsrllookup-source:
+  file.managed:
+    - name: /tmp/1.4.2.tar.gz
+    - source: https://github.com/rjhansen/nsrllookup/archive/refs/tags/1.4.2.tar.gz
+    - source_hash: sha256=bdc17e38880f909eeaec60804db2276761c309279735eb42c781f6757edd4061
+
+nsrllookup-extract:
+  archive.extracted:
+    - name: /tmp/
+    - source: /tmp/1.4.2.tar.gz
+    - enforce_toplevel: False
+    - require:
+      - file: nsrllookup-source
+
+nsrllookup-build:
   cmd.run:
-    - name: |
-        cd /tmp
-        wget -q https://github.com/rjhansen/nsrllookup/archive/1.3.0.tar.gz
-        echo "Got nsrllookup using wget" >> /var/log/bitcurator-install.log 2>&1
-        tar zxf 1.3.0.tar.gz
-        cd nsrllookup-1.3.0
-        cmake -D CMAKE_BUILD_TYPE=Release . >> /var/log/bitcurator-install.log 2>&1
-        make >> /var/log/bitcurator-install.log 2>&1
-        make install
-        cd /tmp
-        rm 1.3.0.tar.gz
-        rm -rf nsrllookup-1.3.0
-    - cwd: /tmp
+    - names:
+      - cmake -D CMAKE_BUILD_TYPE=Release .
+      - make
+      - make install
+    - cwd: /tmp/nsrllookup-1.4.2
     - shell: /bin/bash
-    - timeout: 12000
+    - require:
+      - archive: nsrllookup-extract
+      - sls: bitcurator.packages.build-essential
+      - sls: bitcurator.packages.cmake
+      - sls: bitcurator.packages.libboost-dev
+    - unless: test -x /usr/local/bin/nsrllookup
+
+nsrllookup-cleanup:
+  file.absent:
+    - names:
+      - /tmp/nsrllookup-1.4.2/
+      - /tmp/1.4.2.tar.gz
+    - require:
+      - cmd: nsrllookup-build

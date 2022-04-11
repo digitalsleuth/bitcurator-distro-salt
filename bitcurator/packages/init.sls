@@ -1,4 +1,5 @@
 include:
+  - bitcurator.packages.xmount
   - bitcurator.packages.antiword
   - bitcurator.packages.aufs-tools
   - bitcurator.packages.automake
@@ -7,6 +8,7 @@ include:
   - bitcurator.packages.bison
   - bitcurator.packages.bless
   - bitcurator.packages.brasero
+  - bitcurator.packages.build-essential
   - bitcurator.packages.cdrdao
   - bitcurator.packages.clamav
   - bitcurator.packages.clamav-daemon
@@ -15,11 +17,12 @@ include:
   - bitcurator.packages.cmake
   - bitcurator.packages.curl
   - bitcurator.packages.dcfldd
-  - bitcurator.packages.dconf-tools
+  - bitcurator.packages.dconf
   - bitcurator.packages.dialog
   - bitcurator.packages.discover
   - bitcurator.packages.disktype
   - bitcurator.packages.dkms
+  - bitcurator.packages.docker
   - bitcurator.packages.equivs
   - bitcurator.packages.expat
   - bitcurator.packages.expect
@@ -32,12 +35,11 @@ include:
   - bitcurator.packages.gddrescue
   - bitcurator.packages.ghex
   - bitcurator.packages.git
-  - bitcurator.packages.gnome-sushi
-  - bitcurator.packages.gnome-system-tools
   - bitcurator.packages.grsync
   - bitcurator.packages.gtkhash
   - bitcurator.packages.guymager
   - bitcurator.packages.hardinfo
+  - bitcurator.packages.hashdeep
   - bitcurator.packages.hashrat
   - bitcurator.packages.hdparm
   - bitcurator.packages.hfsplus
@@ -45,6 +47,7 @@ include:
   - bitcurator.packages.hfsutils
   - bitcurator.packages.hfsutils-tcltk
   - bitcurator.packages.icedax
+  - bitcurator.packages.libafflib-dev
   - bitcurator.packages.libappindicator1
   - bitcurator.packages.libappindicator3-dev
   - bitcurator.packages.libarchive-dev
@@ -55,18 +58,20 @@ include:
   - bitcurator.packages.libboost-system-dev
   - bitcurator.packages.libboost-test-dev
   - bitcurator.packages.libbz2-dev
-  - bitcurator.packages.libcppunit-1-dot-14-0
+  - bitcurator.packages.libcppunit
   - bitcurator.packages.libcppunit-dev
   - bitcurator.packages.libcrypto++6
   - bitcurator.packages.libcurl4-openssl-dev
-  - bitcurator.packages.libdvdread4
+  - bitcurator.packages.libdvdread
   - bitcurator.packages.libevent-dev
+  - bitcurator.packages.libewf
   - bitcurator.packages.libexif-dev
   - bitcurator.packages.libexpat1-dev
   - bitcurator.packages.libfuse-dev
   - bitcurator.packages.libicu-dev
   - bitcurator.packages.libimage-exiftool-perl
   - bitcurator.packages.libjpeg-dev
+  - bitcurator.packages.liblightgrep
   - bitcurator.packages.libmad0
   - bitcurator.packages.libmagic-dev
   - bitcurator.packages.libmysqlclient-dev
@@ -87,29 +92,29 @@ include:
   - bitcurator.packages.libtre5
   - bitcurator.packages.libudev-dev
   - bitcurator.packages.libusb-dev
+  - bitcurator.packages.libvhdi-dev
+  - bitcurator.packages.libvmdk-dev
   - bitcurator.packages.libvte-common
   - bitcurator.packages.libvte9
   - bitcurator.packages.libxml2-dev
-  - bitcurator.packages.libxslt-dev
+  - bitcurator.packages.libxslt1-dev
   - bitcurator.packages.linux-headers-generic
-  - bitcurator.packages.md5deep
   - bitcurator.packages.mediainfo
   - bitcurator.packages.mencoder
   - bitcurator.packages.mokutil
   - bitcurator.packages.mplayer
   - bitcurator.packages.mysql-client
-  - bitcurator.packages.nautilus-script-audio-convert
-  - bitcurator.packages.nautilus-scripts-manager
   - bitcurator.packages.nwipe
   - bitcurator.packages.openjdk-8-jdk
-  - bitcurator.packages.openssh-server
+  - bitcurator.packages.openssh
   - bitcurator.packages.plymouth-themes
   - bitcurator.packages.plymouth-x11
   - bitcurator.packages.python3
   - bitcurator.packages.python3-dev
+  - bitcurator.packages.python3-testresources
   - bitcurator.packages.python3-numpy
   - bitcurator.packages.python3-pip
-  - bitcurator.packages.python3-pyqt4
+  - bitcurator.packages.python3-pyqt
   - bitcurator.packages.python3-setuptools
   - bitcurator.packages.python3-sip-dev
   - bitcurator.packages.python3-tk
@@ -117,9 +122,13 @@ include:
   - bitcurator.packages.pst-utils
   - bitcurator.packages.sharutils
   - bitcurator.packages.siegfried
+  - bitcurator.packages.sleuthkit
+  - bitcurator.packages.bulk-extractor
   - bitcurator.packages.smartmontools
+  - bitcurator.packages.software-properties-common
   - bitcurator.packages.squashfs-tools
   - bitcurator.packages.ssdeep
+  - bitcurator.packages.sudo
   - bitcurator.packages.swig
   - bitcurator.packages.syslinux-utils
   - bitcurator.packages.testdisk
@@ -130,15 +139,17 @@ include:
   - bitcurator.packages.uuid-dev
   - bitcurator.packages.vim
   - bitcurator.packages.vlc
-  - bitcurator.packages.xmount
+  - bitcurator.packages.xdg-utils
   - bitcurator.packages.xorriso
   - bitcurator.packages.yad
   - bitcurator.packages.zerofree
+  - bitcurator.packages.zlib1g-dev
 
 bitcurator-packages:
   test.nop:
     - name: bitcurator-packages
     - require:
+      - sls: bitcurator.packages.xmount
       - sls: bitcurator.packages.antiword
       - sls: bitcurator.packages.aufs-tools
       - sls: bitcurator.packages.automake
@@ -147,6 +158,7 @@ bitcurator-packages:
       - sls: bitcurator.packages.bison
       - sls: bitcurator.packages.bless
       - sls: bitcurator.packages.brasero
+      - sls: bitcurator.packages.build-essential
       - sls: bitcurator.packages.cdrdao
       - sls: bitcurator.packages.clamav
       - sls: bitcurator.packages.clamav-daemon
@@ -155,11 +167,12 @@ bitcurator-packages:
       - sls: bitcurator.packages.cmake
       - sls: bitcurator.packages.curl
       - sls: bitcurator.packages.dcfldd
-      - sls: bitcurator.packages.dconf-tools
+      - sls: bitcurator.packages.dconf
       - sls: bitcurator.packages.dialog
       - sls: bitcurator.packages.discover
       - sls: bitcurator.packages.disktype
       - sls: bitcurator.packages.dkms
+      - sls: bitcurator.packages.docker
       - sls: bitcurator.packages.equivs
       - sls: bitcurator.packages.expat
       - sls: bitcurator.packages.expect
@@ -172,12 +185,11 @@ bitcurator-packages:
       - sls: bitcurator.packages.gddrescue
       - sls: bitcurator.packages.ghex
       - sls: bitcurator.packages.git
-      - sls: bitcurator.packages.gnome-sushi
-      - sls: bitcurator.packages.gnome-system-tools
       - sls: bitcurator.packages.grsync
       - sls: bitcurator.packages.gtkhash
       - sls: bitcurator.packages.guymager
       - sls: bitcurator.packages.hardinfo
+      - sls: bitcurator.packages.hashdeep
       - sls: bitcurator.packages.hashrat
       - sls: bitcurator.packages.hdparm
       - sls: bitcurator.packages.hfsplus
@@ -185,6 +197,7 @@ bitcurator-packages:
       - sls: bitcurator.packages.hfsutils
       - sls: bitcurator.packages.hfsutils-tcltk
       - sls: bitcurator.packages.icedax
+      - sls: bitcurator.packages.libafflib-dev
       - sls: bitcurator.packages.libappindicator1
       - sls: bitcurator.packages.libappindicator3-dev
       - sls: bitcurator.packages.libarchive-dev
@@ -195,18 +208,20 @@ bitcurator-packages:
       - sls: bitcurator.packages.libboost-system-dev
       - sls: bitcurator.packages.libboost-test-dev
       - sls: bitcurator.packages.libbz2-dev
-      - sls: bitcurator.packages.libcppunit-1-dot-14-0
+      - sls: bitcurator.packages.libcppunit
       - sls: bitcurator.packages.libcppunit-dev
       - sls: bitcurator.packages.libcrypto++6
       - sls: bitcurator.packages.libcurl4-openssl-dev
-      - sls: bitcurator.packages.libdvdread4
+      - sls: bitcurator.packages.libdvdread
       - sls: bitcurator.packages.libevent-dev
+      - sls: bitcurator.packages.libewf
       - sls: bitcurator.packages.libexif-dev
       - sls: bitcurator.packages.libexpat1-dev
       - sls: bitcurator.packages.libfuse-dev
       - sls: bitcurator.packages.libicu-dev
       - sls: bitcurator.packages.libimage-exiftool-perl
       - sls: bitcurator.packages.libjpeg-dev
+      - sls: bitcurator.packages.liblightgrep
       - sls: bitcurator.packages.libmad0
       - sls: bitcurator.packages.libmagic-dev
       - sls: bitcurator.packages.libmysqlclient-dev
@@ -227,29 +242,29 @@ bitcurator-packages:
       - sls: bitcurator.packages.libtre5
       - sls: bitcurator.packages.libudev-dev
       - sls: bitcurator.packages.libusb-dev
+      - sls: bitcurator.packages.libvhdi-dev
+      - sls: bitcurator.packages.libvmdk-dev
       - sls: bitcurator.packages.libvte-common
       - sls: bitcurator.packages.libvte9
       - sls: bitcurator.packages.libxml2-dev
-      - sls: bitcurator.packages.libxslt-dev
+      - sls: bitcurator.packages.libxslt1-dev
       - sls: bitcurator.packages.linux-headers-generic
-      - sls: bitcurator.packages.md5deep
       - sls: bitcurator.packages.mediainfo
       - sls: bitcurator.packages.mencoder
       - sls: bitcurator.packages.mokutil
       - sls: bitcurator.packages.mplayer
       - sls: bitcurator.packages.mysql-client
-      - sls: bitcurator.packages.nautilus-script-audio-convert
-      - sls: bitcurator.packages.nautilus-scripts-manager
       - sls: bitcurator.packages.nwipe
       - sls: bitcurator.packages.openjdk-8-jdk
-      - sls: bitcurator.packages.openssh-server
+      - sls: bitcurator.packages.openssh
       - sls: bitcurator.packages.plymouth-themes
       - sls: bitcurator.packages.plymouth-x11
       - sls: bitcurator.packages.python3
       - sls: bitcurator.packages.python3-dev
+      - sls: bitcurator.packages.python3-testresources
       - sls: bitcurator.packages.python3-numpy
       - sls: bitcurator.packages.python3-pip
-      - sls: bitcurator.packages.python3-pyqt4
+      - sls: bitcurator.packages.python3-pyqt
       - sls: bitcurator.packages.python3-setuptools
       - sls: bitcurator.packages.python3-sip-dev
       - sls: bitcurator.packages.python3-tk
@@ -257,9 +272,13 @@ bitcurator-packages:
       - sls: bitcurator.packages.pst-utils
       - sls: bitcurator.packages.sharutils
       - sls: bitcurator.packages.siegfried
+      - sls: bitcurator.packages.sleuthkit
+      - sls: bitcurator.packages.bulk-extractor
       - sls: bitcurator.packages.smartmontools
+      - sls: bitcurator.packages.software-properties-common
       - sls: bitcurator.packages.squashfs-tools
       - sls: bitcurator.packages.ssdeep
+      - sls: bitcurator.packages.sudo
       - sls: bitcurator.packages.swig
       - sls: bitcurator.packages.syslinux-utils
       - sls: bitcurator.packages.testdisk
@@ -270,7 +289,8 @@ bitcurator-packages:
       - sls: bitcurator.packages.uuid-dev
       - sls: bitcurator.packages.vim
       - sls: bitcurator.packages.vlc
-      - sls: bitcurator.packages.xmount
+      - sls: bitcurator.packages.xdg-utils
       - sls: bitcurator.packages.xorriso
       - sls: bitcurator.packages.yad
       - sls: bitcurator.packages.zerofree
+      - sls: bitcurator.packages.zlib1g-dev

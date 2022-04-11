@@ -1,8 +1,18 @@
+include:
+  - bitcurator.packages.guymager
+
+guymager-lang:
+  file.managed:
+    - name: /usr/share/guymager/guymager_en-CH.qm
+    - source: salt://bitcurator/env/guymager-config/guymager_en-CH.qm
+    - makedirs: True
+    - require:
+      - sls: bitcurator.packages.guymager
+
 guymager-config:
-  cmd.run:
-    - name: |
-        cp /srv/salt/bitcurator/env/guymager-config/guymager_en-CH.qm /usr/share/guymager/guymager_en-CH.qm
-        cp /srv/salt/bitcurator/env/guymager-config/local.cfg /etc/guymager/local.cfg
-    - cwd: /srv
-    - shell: /bin/bash
-    - timeout: 12000
+  file.managed:
+    - name: /etc/guymager/local.cfg
+    - source: salt://bitcurator/env/guymager-config/local.cfg
+    - makedirs: True
+    - require:
+      - sls: bitcurator.packages.guymager

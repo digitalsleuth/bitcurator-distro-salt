@@ -1,14 +1,30 @@
-bctools:
+include:
+  - bitcurator.packages.git
+  - bitcurator.packages.python3
+
+bctools-source:
+  git.latest:
+    - name: https://github.com/bitcurator/bitcurator-distro-tools
+    - target: /tmp/bctools
+    - user: root
+    - rev: master
+    - force_clone: True
+    - force_reset: True
+    - require:
+      - sls: bitcurator.packages.git
+
+bctools-build:
   cmd.run:
-    - name: |
-        git clone --recursive https://github.com/bitcurator/bitcurator-distro-tools /tmp/bitcurator-distro-tools
-        cd /tmp/bitcurator-distro-tools
-        echo "Cloned bitcurator-distro-tools" >> /var/log/bitcurator-install.log 2>&1
-        echo "The Git HEAD is `git rev-parse HEAD`." >> /var/log/bitcurator-install.log 2>&1
-        python3 setup.py build >> /var/log/bitcurator-install.log 2>&1
-        python3 setup.py install >> /var/log/bitcurator-install.log 2>&1
-        cd /tmp
-        rm -rf bitcurator-distro-tools
-    - cwd: /tmp
-    - shell: /bin/bash
-    - timeout: 12000
+    - name: /usr/bin/python3 setup.py build
+    - cwd: /tmp/bctools
+    - require:
+      - git: bctools-source
+
+bctools-install:
+  pip.installed:
+    - bin_env: /usr/bin/python3
+    - name: /tmp/bctools/
+
+bctools-cleanup:
+  file.absent:
+    - name: /tmp/bctools/

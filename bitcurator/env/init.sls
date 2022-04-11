@@ -1,14 +1,9 @@
 include:
-  - bitcurator.env.desktop-folders
   - bitcurator.env.dot-local
-  - bitcurator.env.launcher-trust
-  - bitcurator.env.ltdesktop
   - bitcurator.env.etc
   - bitcurator.env.guymager-config 
   - bitcurator.env.lib
-  - bitcurator.env.mediasymlink
   - bitcurator.env.mountwinalias
-  - bitcurator.env.setnoclobber
   - bitcurator.env.sudoers
   - bitcurator.env.floppyconfig
   - bitcurator.env.ficlam
@@ -20,16 +15,11 @@ bitcurator-env:
   test.nop:
     - name: bitcurator-env
     - require:
-      - sls: bitcurator.env.desktop-folders
       - sls: bitcurator.env.dot-local
-      - sls: bitcurator.env.launcher-trust
-      - sls: bitcurator.env.ltdesktop
       - sls: bitcurator.env.etc
       - sls: bitcurator.env.guymager-config
       - sls: bitcurator.env.lib
-      - sls: bitcurator.env.mediasymlink
       - sls: bitcurator.env.mountwinalias
-      - sls: bitcurator.env.setnoclobber
       - sls: bitcurator.env.sudoers
       - sls: bitcurator.env.floppyconfig
       - sls: bitcurator.env.ficlam

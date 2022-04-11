@@ -1,20 +1,35 @@
-libuna:
+{% set version = '20220102' %}
+{% set hash = '349e2c40e88b1248a2766a2b67699c17b3de3b90a2ffbe63c858ef4e9fcb0694' %}
+
+include:
+  - bitcurator.packages.build-essential
+
+libuna-source:
+  file.managed:
+    - name: /tmp/libuna-alpha-{{ version }}.tar.gz
+    - source: https://github.com/libyal/libuna/releases/download/{{ version }}/libuna-alpha-{{ version }}.tar.gz
+    - source_hash: sha256={{ hash }}
+    - makedirs: True
+
+libuna-extract:
+  archive.extracted:
+    - name: /tmp/
+    - source: /tmp/libuna-alpha-{{ version }}.tar.gz
+    - enforce_toplevel: False
+
+libuna-install:
   cmd.run:
-    - name: |
-        cp /srv/salt/bitcurator/externals/libuna-alpha-20150927.tar.gz /tmp
-        cd /tmp
-        echo "Got libuna from externals" >> /var/log/bitcurator-install.log 2>&1
-        tar zxf libuna-alpha-20150927.tar.gz 
-        cd libuna-20150927
-        ./configure >> /var/log/bitcurator-install.log 2>&1
-        make >> /var/log/bitcurator-install.log 2>&1
-        make install >> /var/log/bitcurator-install.log 2>&1
-        ldconfig
-        cd /tmp
-        rm -rf libuna-20150927
-        rm libuna-alpha-20150927.tar.gz
-    - cwd: /tmp
+    - names: 
+      - ./configure
+      - make
+      - make install
+      - ldconfig
+    - cwd: /tmp/libuna-{{ version }}
     - shell: /bin/bash
-    - timeout: 12000
     - unless: test -x /usr/local/bin/unabase
 
+libuna-cleanup:
+  file.absent:
+    - names:
+      - /tmp/libuna-{{ version }}/
+      - /tmp/libuna-alpha-{{ version }}.tar.gz
