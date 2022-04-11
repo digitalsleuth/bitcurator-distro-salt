@@ -1,21 +1,50 @@
-dumpfloppy:
+include:
+  - bitcurator.packages.git
+  - bitcurator.packages.build-essential
+
+dumpfloppy-git-configure:
+  git.config_set:
+    - name: http.sslVerify
+    - value: false
+    - global: True
+
+dumpfloppy-source:
+  git.cloned:
+    - name: https://offog.org/git/dumpfloppy.git
+    - target: /tmp/dumpfloppy
+#    - user: root
+#    - force_checkout: True
+#    - force_reset: True
+    - require:
+      - sls: bitcurator.packages.git
+      - sls: bitcurator.packages.build-essential
+
+dumpfloppy-build:
   cmd.run:
-    - name: |
-        cd /tmp
-        git clone https://offog.org/git/dumpfloppy.git
-        cd dumpfloppy
-        echo "Cloned dumpfloppy" >> /var/log/bitcurator-install.log 2>&1
-        echo "The Git HEAD is `git rev-parse HEAD`." >> /var/log/bitcurator-install.log 2>&1
-        aclocal --force >> /var/log/bitcurator-install.log 2>&1
-        autoconf -f >> /var/log/bitcurator-install.log 2>&1
-        automake --add-missing >> /var/log/bitcurator-install.log 2>&1
-        ./configure >> /var/log/bitcurator-install.log 2>&1
-        make >> /var/log/bitcurator-install.log 2>&1
-        make install >> /var/log/bitcurator-install.log 2>&1
-        ldconfig
-        cd /tmp
-        rm -rf dumpfloppy
-    - cwd: /tmp
+    - names: 
+      - aclocal --force
+      - autoconf -f
+      - automake --add-missing
+      - ./configure
+      - make
+      - make install
+      - ldconfig
+    - cwd: /tmp/dumpfloppy/
     - shell: /bin/bash
-    - timeout: 12000
     - unless: test -x /usr/local/bin/dumpfloppy
+    - require:
+      - git: dumpfloppy-source
+
+dumpfloppy-cleanup:
+  file.absent:
+    - name: /tmp/dumpfloppy/
+    - require:
+      - cmd: dumpfloppy-build
+
+dumpfloppy-git-reset:
+  git.config_set:
+    - name: http.sslVerify
+    - value: true
+    - global: True
+    - require:
+      - cmd: dumpfloppy-build

@@ -1,4 +1,4 @@
-{% set user = salt['pillar.get']('bitcurator_user') %}
+{% set user = salt['pillar.get']('bitcurator_user', 'bcadmin') %}
 
 rc-noclobber:
   file.append:

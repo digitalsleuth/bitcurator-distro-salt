@@ -1,12 +1,23 @@
-{% set user = salt['pillar.get']('bitcurator_user') %}
+{% set user = salt['pillar.get']('bitcurator_user', 'bcadmin') %}
+{% if user == "root" %}
+  {% set home = "/root" %}
+{% else %}
+  {% set home = "/home/" + user %}
+{% endif %}
+
+include:
+  - bitcurator.config.user.user
 
 mountwinalias:
-  cmd.run:
-    - name: |
-        if ! grep -i "alias mountwin" /home/{{ user }}/.bash_aliases > /dev/null 2>&1
-        then
-                echo "alias mountwin='mount -o ro,loop,show_sys_files,streams_interface=windows'" >> $HOME/.bash_aliases
-        fi
-    - cwd: /tmp
-    - shell: /bin/bash
-    - timeout: 12000
+  file.append:
+    - name: {{ home }}/.bash_aliases
+    - text: "alias mountwin='mount -o ro,loop,show_sys_files,streams_interface=windows'"
+    - unless: 'grep -i "alias mountwin" {{ home }}/.bash_aliases'
+    - require:
+      - user: bitcurator-user-{{ user }}
+
+mountwinalias-root:
+  file.append:
+    - name: /root/.bash_aliases
+    - text: "alias mountwin='mount -o ro,loop,show_sys_files,streams_interface=windows'"
+    - unless: 'grep -i "alias mountwin" /root/.bash_aliases'
